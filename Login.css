@@ -91,28 +91,6 @@
     line-height: 24px;
     color: #242331;
 }
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-Halkhata-The-Shop-Management-System
-/
-200042167
-/
-￼
-in
-main
-Cancel changes
-￼ Edit file ￼ Preview changes
-￼
-Spaces
-￼
-4
 
 .page .wrapper .shop-id-input{
     box-sizing: border-box;
@@ -170,10 +148,17 @@ Spaces
     padding: 14px 16px;
     gap: 4px;
     position: absolute;
-    width: 440px;
-    height: 52px;
+    width: 220px;
+    height: 46px;
     left: 80px;
     top: 682px;
-    background: #009DDC;
+    background: #1dafe9;
     border-radius: 8px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
 }
