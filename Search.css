@@ -6,7 +6,7 @@
 
 .navbar{
     position: absolute;
-    width: 1280px;
+    width: 1545px;
     height: 100px;
     left: 0px;
     top: 0px;
@@ -22,6 +22,50 @@
     color: #242331;
     position: absolute;
     left: 8%;
+}
+
+.navbar-add-product-button{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 500%;
+    color: #242331;
+    position: absolute;
+    left: 30%;
+}
+
+.navbar-search-product-button{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 500%;
+    color: #242331;
+    position: absolute;
+    left: 48%;
+}
+
+.navbar-sell-product-button{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 500%;
+    color: #242331;
+    position: absolute;
+    left: 66%;
+}
+
+.navbar-return-product-button{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 500%;
+    color: #242331;
+    position: absolute;
+    left: 84%;
 }
 
 .wrapper{
