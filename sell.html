@@ -5,19 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search</title>
+    <title>Sell Product</title>
     <link rel="stylesheet" href="sell.css">
 </head>
-  
+
 <body>
 
     <div class="navbar">
+        
         <div class="navbar-sell-product-label">
             <label>Sell Product</label>
         </div>
+
+        <div class="navbar-add-product-button">
+            <a href = add.html>Add Product</a>
+        </div>
+        <div class="navbar-search-product-button">
+            <a href = search.html>Search Product</a>
+        </div>
+        <div class="navbar-sell-product-button">
+            <a href = sell.html>Sell Product</a>
+        </div>
+        <div class="navbar-return-product-button">
+            <a href = return.html>Return Product</a>
+        </div>
+
     </div>
 
-    <div class="wrapper">
+    <form action="" method="get" class="wrapper">
 
         <div class="wrapper-sell-product-label">
             <label>Sell Product</label>
@@ -26,36 +41,54 @@
         <div class="wrapper-customer-name-label">
             <label>Customer Name</label>
         </div>
-        <div class="wrapper-customer-name-input">
-            <input type="text">
+        <div>
+            <input type="text" class="wrapper-customer-name-input" placeholder="Enter Customer Name">
         </div>
 
         <div class="wrapper-contact-number-label">
             <label>Contact Number</label>
         </div>
-        <div class="wrapper-contact-number-intput">
-            <input type="text">
+        <div>
+            <input type="text" class="wrapper-contact-number-intput" placeholder="Enter Customer Contact Number">
         </div>
 
         <div class="wrapper-product-id-label">
             <label>Product ID</label>
         </div>
-        <div class="wrapper-product-id-intput">
-            <input type="text">
+        <div>
+            <input type="text" class="wrapper-product-id-intput" placeholder="Enter Product ID">
         </div>
 
         <div class="wrapper-quantity-label">
             <label>Quantity</label>
         </div>
-        <div class="wrapper-quantity-intput">
-            <input type="text">
+        <div>
+            <input type="text" class="wrapper-quantity-intput" placeholder="Enter Product Quantity">
         </div>
 
-        <div class="wrapper-restock-button">
-            <input id= "button" type="button" value="RESTOCK" required>
+        <div class="wrapper-promo-code-label">
+            <label>Promo Code</label>
+        </div>
+        <div>
+            <input type="text" class="wrapper-promo-code-intput" placeholder="Enter Promo Code">
+        </div>
+
+        <div class="wrapper-bill-label">
+            <label>Total Bill</label>
+        </div>
+        <div>
+            <input type="text" class="wrapper-bill-output" placeholder="Total Bill">
+        </div>
+
+        <div>
+            <button type="submit" class="wrapper-add-to-cart-button" required>Add to Cart</button>
+        </div>
+
+        <div>
+            <button type="submit" class="wrapper-sell-button" required>Sell Product</button>
         </div>
         
-    </div>
+    </form>
 
 </body>
   
