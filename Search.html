@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
-    <link rel="stylesheet" href="Search.css">
+    <link rel="stylesheet" href="search.css">
 </head>
   
 <body>
@@ -15,26 +15,38 @@
         <div class="navbar-search-product-label">
             <label>Search Product</label>
         </div>
+
+        <div class="navbar-add-product-button">
+            <a href = add.html>Add Product</a>
+        </div>
+        <div class="navbar-search-product-button">
+            <a href = search.html>Search Product</a>
+        </div>
+        <div class="navbar-sell-product-button">
+            <a href = sell.html>Sell Product</a>
+        </div>
+        <div class="navbar-return-product-button">
+            <a href = return.html>Return Product</a>
+        </div>
+
     </div>
 
     <form action="" method="get" class="wrapper">
+
         <div class="wrapper-search-product-label">
             <label>Search Product</label>
         </div>
-
 
         <div class="wrapper-product-id-label">
             <label>Product ID</label>
         </div>
         <div>
-            <input type="text" class="wrapper-product-id-input" placeholder="Enter Productor ID">
+            <input type="text" class="wrapper-product-id-input" placeholder="Enter Product ID">
         </div>
-
 
         <div>
             <button type="submit" class="wrapper-search-button" required>Search</button>
         </div>
-
 
         <div class="wrapper-product-name-label">
             <label>Product Name</label>
@@ -43,7 +55,6 @@
             <input type="text" class="wrapper-product-name-output" placeholder="Product Name">
         </div>
 
-
         <div class="wrapper-product-quantity-label">
             <label>Product Quantity</label>
         </div>
@@ -51,14 +62,15 @@
             <input type="text" class="wrapper-product-quantity-output" placeholder="Product Quantity">
         </div>
     
-
         <div class="wrapper-product-price-label">
             <label>Product Price</label>
         </div>
         <div>
             <input type="text" class="wrapper-product-price-output" placeholder="Product Price">
-        </div> 
+        </div>
+
     </form>
+    
 </body>
   
 </html>
