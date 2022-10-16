@@ -13,7 +13,7 @@
     background: #EFEEEE;
 }
 
-.navbar-search-product-label{
+.navbar-return-product-label{
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
@@ -78,7 +78,7 @@
     background: white;
 }
 
-.wrapper-search-product-label{
+.wrapper-return-product-label{
     position: absolute;
     width: 300px;
     height: 60px;
@@ -92,12 +92,12 @@
     color: #242331;
 }
 
-.wrapper-product-id-label{
+.wrapper-customer-name-label{
     position: absolute;
-    width: 77px;
+    width: 120px;
     height: 24px;
     left: 420px;
-    top: 274px;
+    top: 264px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -106,12 +106,14 @@
     color: #242331;
 }
 
-.wrapper-product-id-input{
+.wrapper-customer-name-input{ 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10px 10px;
+    align-items: flex-start;
+    padding: 12px 16px;
+    gap: 4px;
     position: absolute;
     width: 440px;
     height: 48px;
@@ -121,30 +123,40 @@
     border-radius: 8px;
 }
 
-.wrapper-search-button{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 14px 16px;
-    gap: 4px;
-    position: absolute;
-    width: 240px;
-    height: 52px;
-    left: 420px;
-    top: 388px;
-    background: #009DDC;
-    border-radius: 8px;
-    border-color: #009DDC;
-
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bolder;
-    font-size: larger;
-}
-
-.wrapper-product-name-label{
+.wrapper-contact-number-label{
     position: absolute;
     width: 150px;
+    height: 24px;
+    left: 420px;
+    top: 372px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #242331;
+}
+
+.wrapper-contact-number-intput{ 
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 12px 16px;
+    gap: 4px;
+    position: absolute;
+    width: 440px;
+    height: 48px;
+    left: 420px;
+    top: 408px;
+    border: 1px solid #C5C5C5;
+    border-radius: 8px;
+}
+
+.wrapper-product-id-label{
+    position: absolute;
+    width: 126px;
     height: 24px;
     left: 420px;
     top: 480px;
@@ -156,7 +168,7 @@
     color: #242331;
 }
 
-.wrapper-product-name-output{ 
+.wrapper-product-id-intput{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -173,9 +185,9 @@
     border-radius: 8px;
 }
 
-.wrapper-product-quantity-label{
+.wrapper-quantity-label{
     position: absolute;
-    width: 126px;
+    width: 99px;
     height: 24px;
     left: 420px;
     top: 588px;
@@ -187,7 +199,7 @@
     color: #242331;
 }
 
-.wrapper-product-quantity-output{
+.wrapper-quantity-intput{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -204,33 +216,17 @@
     border-radius: 8px;
 }
 
-.wrapper-product-price-label{
-    position: absolute;
-    width: 99px;
-    height: 24px;
-    left: 420px;
-    top: 696px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #242331;
-}
-
-.wrapper-product-price-output{
-    box-sizing: border-box;
+.wrapper-restock-button{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
-    padding: 12px 16px;
+    padding: 14px 16px;
     gap: 4px;
     position: absolute;
     width: 440px;
-    height: 48px;
+    height: 52px;
     left: 420px;
     top: 732px;
-    border: 1px solid #C5C5C5;
+    background: #009DDC;
     border-radius: 8px;
 }
