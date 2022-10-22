@@ -1,10 +1,18 @@
 <?php
-    $hostname = 'localhost';
-    $username = 'root';
-    $password = '';
-    $dbname = 'users';
-    $conn = mysqli_connect($hostname, $username, $password, $dbname);
+    session_start();
+    include('config.php');
     
+        $shopID = $_POST['shopID'];
+        $password = $_POST['password'];
+        $query = mysqli_query("SELECT * FROM users WHERE shopID = '$shopID' AND password = '$password' ");
+        $row = mysqli_fetch_array($query);
+        if($row['shopID'] == $shopID && $row['password'] == $password){
+            echo "Log In Successful....";
+        }
+        else{
+            echo "Log In Denied...";
+        }
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,22 +24,7 @@
     <link rel="stylesheet" href="Login.css">
 </head>
 <body>
-    <?php 
-        if(isset($_POST['user_id'])){
-            $user_id = $_POST['user_id'];
-            $user_password = $_POST['user_password'];
-            $sql = "SELECT * FROM users WHERE user_id = '$user_id' AND user_password = '$user_password'";
-            $query = $conn->query($sql);
 
-            if(mysqli_num_rows($query) > 0){
-                echo '<script>alert("You have logged In Successfully!")</script>';
-            }
-           // else{
-           //     echo '<script>alert("Failed!")</script>';
-           // }
-        
-        }
-    ?>
     <div class="page">
 
         <div class="side-frame">
@@ -51,7 +44,7 @@
         </div>
 
         <div class="wrapper">
-            <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+            <form action='login.php' method="get">
                 <div class="welcome-label">
                     <label>Welcome to Halkhata - The Shop Management System</label>
                 </div>
@@ -62,13 +55,15 @@
                     <label>Shop ID</label>
                 </div>                     
                 <div>
-                    <input type="text" name ="user_id" placeholder="Enter the Shop ID" class="shop-id-input">
+                    <input type="text" name ="shopID" placeholder="Enter the Shop ID" class="shop-id-input">
                 </div>
+
+
                 <div class="password-label">
                     <label>Password</label>
                 </div>        
                 <div>
-                    <input type="password" name ="user_password" placeholder="Enter Your Password"  class="password-input">
+                    <input type="text" name ="password" placeholder="Enter Your Password"  class="password-input">
                 </div>
                 <div>
                     <button type="submit" name = "logIn" class="login-button" required>Login</button>
