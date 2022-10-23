@@ -6,73 +6,134 @@
 
 .navbar{
     position: absolute;
-    width: 1545px;
+    width: 1560px;
     height: 100px;
     left: 0px;
     top: 0px;
     background: #EFEEEE;
 }
 
-.navbar-return-product-label{
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 500%;
-    color: #242331;
+.navbar-shop-logo{
     position: absolute;
-    left: 8%;
+    top : 5px;
+    left: 7%;
 }
 
 .navbar-add-product-button{
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 500%;
     color: #242331;
     position: absolute;
-    left: 30%;
-}
-
-.navbar-search-product-button{
-    font-family: 'Lato';
+    left: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 16px;
+    gap: 4px;
+    height: 52px;
+    background: #009DDC;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 20px;
-    line-height: 500%;
-    color: #242331;
-    position: absolute;
-    left: 48%;
+    line-height: 20px;
+    top: 24px;
+    text-align: center;
 }
 
 .navbar-sell-product-button{
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 500%;
     color: #242331;
     position: absolute;
-    left: 66%;
+    left: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 16px;
+    gap: 4px;
+    height: 52px;
+    background: #009DDC;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    top: 24px;
+    text-align: center;
 }
 
-.navbar-return-product-button{
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 500%;
+.navbar-search-product-button{
     color: #242331;
     position: absolute;
-    left: 84%;
+    left: 49.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 16px;
+    gap: 4px;
+    height: 52px;
+    background: #009DDC;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    top: 24px;
+    text-align: center;
+}
+
+.navbar-dashboard-button{
+    color: #242331;
+    position: absolute;
+    left: 78%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 16px;
+    gap: 4px;
+    height: 52px;
+    background: #009DDC;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    top: 24px;
+    text-align: center;
+}
+
+.navbar-logout-button{
+    color: #242331;
+    position: absolute;
+    left: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 16px;
+    gap: 4px;
+    height: 52px;
+    background: #009DDC;
+    border-radius: 8px;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    top: 24px;
+    text-align: center;
 }
 
 .wrapper{
     position: center;
     display: flex;
-    width: 1280px;
-    height: 1000px;
+    width: 1560px;
+    height: 770px;
     left: 200px;
     top: 100px;
     background: white;
@@ -83,26 +144,12 @@
     width: 300px;
     height: 60px;
     left: 420px;
-    top: 174px;
+    top: 150px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 60px;
-    color: #242331;
-}
-
-.wrapper-customer-name-label{
-    position: absolute;
-    width: 120px;
-    height: 24px;
-    left: 420px;
-    top: 264px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
     color: #242331;
 }
 
@@ -118,23 +165,9 @@
     width: 440px;
     height: 48px;
     left: 420px;
-    top: 310px;
+    top: 250px;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
-}
-
-.wrapper-contact-number-label{
-    position: absolute;
-    width: 150px;
-    height: 24px;
-    left: 420px;
-    top: 372px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #242331;
 }
 
 .wrapper-contact-number-intput{ 
@@ -149,23 +182,9 @@
     width: 440px;
     height: 48px;
     left: 420px;
-    top: 408px;
+    top: 340px;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
-}
-
-.wrapper-product-id-label{
-    position: absolute;
-    width: 126px;
-    height: 24px;
-    left: 420px;
-    top: 480px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #242331;
 }
 
 .wrapper-product-id-intput{
@@ -180,23 +199,9 @@
     width: 440px;
     height: 48px;
     left: 420px;
-    top: 516px;
+    top: 430px;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
-}
-
-.wrapper-quantity-label{
-    position: absolute;
-    width: 99px;
-    height: 24px;
-    left: 420px;
-    top: 588px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #242331;
 }
 
 .wrapper-quantity-intput{
@@ -211,7 +216,7 @@
     width: 440px;
     height: 48px;
     left: 420px;
-    top: 624px;
+    top: 520px;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
 }
@@ -226,7 +231,7 @@
     width: 440px;
     height: 52px;
     left: 420px;
-    top: 732px;
+    top: 610px;
     background: #009DDC;
     border-radius: 8px;
     color: #fff;
@@ -235,4 +240,15 @@
     font-weight: 500;
     font-size: 25px;
     line-height: 20px;
+}
+
+.footer{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 120%;
+    color: #242331;
+    position: absolute;
+    left: 0.75%;
+    top: 750px;
 }

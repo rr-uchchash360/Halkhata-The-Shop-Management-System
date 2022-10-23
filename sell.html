@@ -7,24 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sell Product</title>
     <link rel="stylesheet" href="sell.css">
+    <link rel="icon" href="icons/sell.png" type="image/icon type">
 </head>
 
 <body>
 
     <div class="navbar">
-        
-        <div class="navbar-sell-product-label">
-            <label>Sell Product</label>
+
+        <div class="navbar-shop-logo">
+            <a href="add.html"><img src="icons/shop.png" style="width: 90px; height: 90px;">
         </div>
 
         <div class="navbar-add-product-button">
-            <a href = add.html>Add Product</a>
+            <a href="add.html">Add</a>
         </div>
+
         <div class="navbar-search-product-button">
-            <a href = search.html>Search Product</a>
+            <a href="search.html">Search</a>
         </div>
+
         <div class="navbar-return-product-button">
-            <a href = return.html>Return Product</a>
+            <a href="return.html">Return</a>
+        </div>
+
+        <div class="navbar-dashboard-button">
+            <a href = login.html>Dashboard</a>
+        </div>
+
+        <div class="navbar-logout-button">
+            <a href = login.html>Log Out</a>
         </div>
 
     </div>
@@ -32,6 +43,7 @@
     <form action="" method="get" class="wrapper">
 
         <div class="wrapper-sell-product-label">
+            <img src="icons/sell.png" style="width: 22px;height: 22px;">
             <label>Sell Product</label>
         </div>
 
@@ -47,12 +59,11 @@
 
         
         <div>
-            <input type="text" class="wrapper-product-id-intput" placeholder="Enter Product ID">
+            <input type="number" onkeyup="return event.charCode >= 48" min="1" class="wrapper-product-id-intput" placeholder="Enter Product ID">
         </div>
-
         
         <div>
-            <input type="text" class="wrapper-quantity-intput" placeholder="Enter Product Quantity">
+            <input type="number" onkeyup="return event.charCode >= 48" min="1" class="wrapper-quantity-intput" placeholder="Enter Product Quantity">
         </div>
 
         
@@ -60,9 +71,12 @@
             <input type="text" class="wrapper-promo-code-intput" placeholder="Enter Promo Code">
         </div>
 
+        <div class="wrapper-bill-label">
+            <label>Total Bill</label>
+        </div>
         
         <div>
-            <input type="text" class="wrapper-bill-output" placeholder="Total Bill">
+            <output type="text" class="wrapper-bill-output">
         </div>
 
         <div>
@@ -74,6 +88,13 @@
         </div>
         
     </form>
+
+    <div class="footer">
+        <label>©</label>
+        <a href = https://github.com/rr-uchchash360>Md. Rafiur Rahman</a>
+        <a href = https://github.com/zubayertahmid>Zubayer Tahmid</a>
+        <a href = https://github.com/sadman89>Sadman Sadiq</a>
+    </div>
 
 </body>
   

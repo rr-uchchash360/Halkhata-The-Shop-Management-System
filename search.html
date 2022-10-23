@@ -7,23 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
     <link rel="stylesheet" href="search.css">
+    <link rel="icon" href="icons/search.png" type="image/icon type">
 </head>
   
 <body>
 
     <div class="navbar">
-        <div class="navbar-search-product-label">
-            <label>Search Product</label>
+
+        <div class="navbar-shop-logo">
+            <a href="add.html"><img src="icons/shop.png" style="width: 90px; height: 90px;">
         </div>
 
         <div class="navbar-add-product-button">
-            <a href = add.html>Add Product</a>
+            <a href="add.html">Add</a>
         </div>
         <div class="navbar-sell-product-button">
-            <a href = sell.html>Sell Product</a>
+            <a href="sell.html">Sell</a>
         </div>
         <div class="navbar-return-product-button">
-            <a href = return.html>Return Product</a>
+            <a href="return.html">Return</a>
+        </div>
+
+        <div class="navbar-dashboard-button">
+            <a href = login.html>Dashboard</a>
+        </div>
+
+        <div class="navbar-logout-button">
+            <a href = login.html>Log Out</a>
         </div>
 
     </div>
@@ -31,31 +41,49 @@
     <form action="" method="get" class="wrapper">
 
         <div class="wrapper-search-product-label">
+            <img src="icons/search.png" style="width: 22px;height: 22px;">
             <label>Search Product</label>
         </div>
         
+        <div class="wrapper-product-id-label">
+            <label>Product Name</label>
+        </div>
+
         <div>
-            <input type="text" class="wrapper-product-id-input" placeholder="Enter Product ID">
+            <input type="text" class="wrapper-product-name-input" placeholder="Enter Product Name">
         </div>
 
         <div>
             <button type="submit" class="wrapper-search-button" required>Search</button>
         </div>
        
+        <div class="wrapper-product-quantity-label">
+            <label>Product Quantity</label>
+        </div>
         <div>
-            <input type="text" class="wrapper-product-name-output" placeholder="Product Name">
+            <output type="text" class="wrapper-product-id-output" placeholder="Product Name">
+        </div>
+    
+        <div class="wrapper-product-price-label">
+            <label>Product Price</label>
+        </div>
+        <div>
+            <output type="text" class="wrapper-product-quantity-output" placeholder="Product Quantity">
         </div>
     
         <div>
-            <input type="text" class="wrapper-product-quantity-output" placeholder="Product Quantity">
-        </div>
-    
-        <div>
-            <input type="text" class="wrapper-product-price-output" placeholder="Product Price">
+            <output type="text" class="wrapper-product-price-output" placeholder="Product Price">
         </div>
 
     </form>
-    
+
+    <div class="footer">
+        <label>©</label>
+        <a href = https://github.com/rr-uchchash360>Md. Rafiur Rahman</a>
+        <a href = https://github.com/zubayertahmid>Zubayer Tahmid</a>
+        <a href = https://github.com/sadman89>Sadman Sadiq</a>
+    </div>
+
 </body>
   
 </html>
