@@ -6,89 +6,85 @@
 
 .page{
     position: absolute;
-    width: 1280px;
-    height: 720px;
+    width: 1560px;
+    height: 770px;
     left: 0px;
     top: 0px;
     background: white;
 }
 
+.logo{
+    position: absolute;
+    top : 100px;
+    left: 16.5%;
+}
+
 .page .system-name{
     position: absolute;
-    width: 380px;
+    width: 600px;
     height: 180px;
-    left: 280px;
-    top: 393px;
+    left: 100px;
+    top: 400px;
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 40px;
     line-height: 150%;
+    text-align: center;
     color: #242331;
 }
 
 .page .motto{
     position: absolute;
-    width: 201px;
+    width: 400px;
     height: 90px;
-    left: 280px;
-    top: 655px;
+    left: 210px;
+    top: 600px;
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 800;
     font-size: 30px;
-    line-height: 150%;
+    line-height: 120%;
+    text-align: center;
     color: #242331;
 }
 
 .page .wrapper{
     position: absolute;
     width: 600px;
-    height: 982px;
+    height: 770px;
     left: 800px;
     top: 0px;
-    background: #FBFBFB;
+    background: #e7e7e7;
 }
 
 .page .wrapper .welcome-label{
     position: absolute;
-    width: 534px;
+    width: 600px;
     height: 60px;
-    left: 80px;
-    top: 152px;
+    left: 0px;
+    top: 220px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 60px;
+    text-align: center;
     color: #242331;
 }
 
 .page .wrapper .login-label{
     position: absolute;
-    width: 300px;
+    width: 600px;
     height: 60px;
-    left: 80px;
-    top: 330px;
+    left: 0px;
+    top: 310px;
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
+    font-weight: 520;
+    font-size: 22px;
     line-height: 30px;
-    color: #242331;
-}
-
-.page .wrapper .shop-id-label{
-    position: absolute;
-    width: 70px;
-    height: 24px;
-    left: 80px;
-    top: 446px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    text-align: center;
     color: #242331;
 }
 
@@ -104,23 +100,9 @@
     width: 440px;
     height: 48px;
     left: 80px;
-    top: 482px;
+    top: 390px;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
-}
-
-.page .wrapper .password-label{
-    position: absolute;
-    width: 68px;
-    height: 24px;
-    left: 80px;
-    top: 558px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #242331;
 }
 
 .page .wrapper .password-input{
@@ -135,30 +117,31 @@
     width: 440px;
     height: 48px;
     left: 80px;
-    top: 594px;
+    top: 450px;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
 }
 
 .page .wrapper .login-button{
+    
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     padding: 14px 16px;
     gap: 4px;
     position: absolute;
-    width: 220px;
-    height: 46px;
+    width: 440px;
+    height: 52px;
     left: 80px;
-    top: 682px;
-    background: #1dafe9;
+    top: 520px;
+    background: #009DDC;
     border-radius: 8px;
-
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 30px;
     color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 20px;
 }
+    
+    

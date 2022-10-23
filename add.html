@@ -7,26 +7,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Product</title>
     <link rel="stylesheet" href="add.css">
+    <link rel="icon" href="icons/add.png" type="image/icon type">
 </head>
   
 <body>
 
     <div class="navbar">
 
-        <div class="navbar-add-product-label">
-            <label>Add Product</label>
+        <div class="navbar-shop-logo">
+            <a href="add.html"><img src="icons/shop.png" style="width: 90px; height: 90px;">
         </div>
 
         <div class="navbar-search-product-button">
-            <a href="search.html"><img src="icons/search.png" alt="Search Product" style="width: 30px;height:30px;">
+            <a href="search.html"><img src="icons/search.png" style="width: 16px;height:16px;">
             <label>Search</label>
             </a>
         </div>
         <div class="navbar-sell-product-button">
-            <a href = sell.html>Sell Product</a>
+            <a href="sell.html"><img src="icons/sell.png" style="width: 16px;height:16px;">
+                <label>Sell</label>
+            </a>
         </div>
         <div class="navbar-return-product-button">
-            <a href = return.html>Return Product</a>
+            <a href="return.html"><img src="icons/return.png" style="width: 16px;height:16px;">
+                <label>Return</label>
+            </a>
+        </div>
+
+        <div class="navbar-home-button">
+            <a href = login.html>Dashboard</a>
         </div>
 
         <div class="navbar-logout-button">
@@ -38,11 +47,12 @@
     <form action="" method="get" class="wrapper">
     
         <div class="wrapper-add-product-label">
+            <img src="icons/add.png" style="width: 23px;height: 23px;">
             <label>Add Product</label>
         </div>
 
         <div>
-            <input type="text" class="wrapper-product-id-input" placeholder="Enter Product ID">
+            <input type="number" onkeyup="return event.charCode >= 48" min="1" class="wrapper-product-id-input" placeholder="Enter Product ID">
         </div>
         
         <div>
@@ -50,11 +60,11 @@
         </div>
         
         <div>
-            <input type="text" class="wrapper-product-quantity-intput" placeholder="Enter Product Quantity">
+            <input type="number" onkeyup="return event.charCode >= 48" min="1" class="wrapper-product-quantity-intput" placeholder="Enter Product Quantity">
         </div>
 
         <div>
-            <input type="text" class="wrapper-product-price-intput" placeholder="Enter Product Price">
+            <input type="number" onkeyup="return event.charCode >= 48" min="1" class="wrapper-product-price-intput" placeholder="Enter Product Price">
         </div>
 
         <div>
@@ -62,6 +72,24 @@
         </div>
         
     </form>
+
+    <div class="footer">
+
+        <div class="contribution">
+            <label>Contributed By :</label>
+        </div>
+        
+        <div class="footer-copyright-md-rafiur-rahman">
+            <a href = https://github.com/rr-uchchash360>Md. Rafiur Rahman</a>
+        </div>
+        <div class="footer-copyright-zubayer">
+            <a href = https://github.com/zubayertahmid>Zubayer Tahmid</a>
+        </div>
+        <div class="footer-copyright-zubayer">
+            <a href = https://github.com/sadman89>Sadman Sadiq</a>
+        </div>
+
+    </div>
 
 </body>
   
