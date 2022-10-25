@@ -1,18 +1,10 @@
 <?php
-    session_start();
-    include('config.php');
+    $hostname = 'localhost';
+    $username = 'root';
+    $password = '';
+    $dbname = 'users';
+    $conn = mysqli_connect($hostname, $username, $password, $dbname);
     
-        $shopID = $_POST['shopID'];
-        $password = $_POST['password'];
-        $query = mysqli_query("SELECT * FROM users WHERE shopID = '$shopID' AND password = '$password' ");
-        $row = mysqli_fetch_array($query);
-        if($row['shopID'] == $shopID && $row['password'] == $password){
-            echo "Log In Successful....";
-        }
-        else{
-            echo "Log In Denied...";
-        }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
