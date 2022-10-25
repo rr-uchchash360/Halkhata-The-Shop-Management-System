@@ -13,10 +13,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="Login.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="icons/shop.png" type="image/icon type">
 </head>
 <body>
-    <?php 
+<?php 
         if(isset($_POST['user_id'])){
             $user_id = $_POST['user_id'];
             $user_password = $_POST['user_password'];
@@ -26,10 +27,6 @@
             if(mysqli_num_rows($query) > 0){
                 echo '<script>alert("You have logged In Successfully!")</script>';
             }
-           // else{
-           //     echo '<script>alert("Failed!")</script>';
-           // }
-        
         }
     ?>
     <div class="page">
@@ -37,15 +34,15 @@
         <div class="side-frame">
 
             <div class="logo">
-                
+                <img src="icons/shop.png" style="width: 280px; height: 280px;">                
             </div>
     
             <div class="system-name">
-                <label>Halkhata - Shop Management System</label>
+                <label>Halkhata<br>Shop Management System</label>
             </div>
     
             <div class="motto">
-                <label>Less Hassle, More Profit.</label>
+                <label>Less Hassle, More Profit!</label>
             </div>
     
         </div>
@@ -53,25 +50,22 @@
         <div class="wrapper">
             <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                 <div class="welcome-label">
-                    <label>Welcome to Halkhata - The Shop Management System</label>
+                    <label>Welcome to Halkhata!</label>
                 </div>
                 <div class="login-label">
                     <label>Please Login!</label>
                 </div>
-                <div class="shop-id-label">
-                    <label>Shop ID</label>
-                </div>                     
+                                   
                 <div>
-                    <input type="text" name ="user_id" placeholder="Enter the Shop ID" class="shop-id-input">
+                    <input type="text" onkeyup="return event.charCode >= 48" min="1" class="shop-id-input" name="user_id" placeholder="Enter the Shop ID">
                 </div>
-                <div class="password-label">
-                    <label>Password</label>
-                </div>        
+
                 <div>
-                    <input type="password" name ="user_password" placeholder="Enter Your Password"  class="password-input">
+                    <input type="password" placeholder="Enter Your Password" name ="user_password" class="password-input">
                 </div>
+
                 <div>
-                    <button type="submit" name = "logIn" class="login-button" required>Login</button>
+                    <button type="submit" class="login-button" required>Login</button>
                 </div>
             </form>
         </div>
