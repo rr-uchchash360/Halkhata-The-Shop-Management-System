@@ -25,6 +25,7 @@
             $product_name = $_POST['product_name'];
             $product_quantity = $_POST['product_quantity'];
             $product_price = $_POST['product_price'];
+            
             $sql = "INSERT INTO products (product_name, product_quantity, product_id, product_price) 
                     VALUES ('$product_name', '$product_quantity', '$product_id', '$product_price')";
                 if($conn->query($sql) == "TRUE"){
