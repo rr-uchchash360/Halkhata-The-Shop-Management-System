@@ -28,7 +28,15 @@
             
             $sql = "INSERT INTO products (product_name, product_quantity, product_id, product_price) 
                     VALUES ('$product_name', '$product_quantity', '$product_id', '$product_price')";
-                if($conn->query($sql) == "TRUE"){
+            
+            if($conn->query($sql) == "FALSE"){
+                $update = "UPDATE products 
+                        SET product_quantity += $product_quantity";
+                if($conn->query($update) == "TRUE"){
+                    echo '<script>alert("Data Updated Successfully!")</script>';
+                }
+            }
+            else if($conn->query($sql) == "TRUE"){
                 echo '<script>alert("Data Inserted Successfully!")</script>';
             }
         }
