@@ -24,20 +24,23 @@
             $product_id = $_POST['product_id'];
             $product_name = $_POST['product_name'];
             $product_quantity = $_POST['product_quantity'];
-            $product_price = $_POST['product_price'];
-            
-            $sql = "INSERT INTO products (product_name, product_quantity, product_id, product_price) 
+            $product_price = $_POST['product_price'];    
+            $queryCheck = "SELECT product_id FROM products WHERE product_id = '$product_id'";
+            if($conn->query($queryCheck) == FALSE){
+                $sql = "INSERT INTO products (product_name, product_quantity, product_id, product_price) 
                     VALUES ('$product_name', '$product_quantity', '$product_id', '$product_price')";
-            
-            if($conn->query($sql) == "FALSE"){
-                $update = "UPDATE products 
-                        SET product_quantity += $product_quantity";
-                if($conn->query($update) == "TRUE"){
-                    echo '<script>alert("Data Updated Successfully!")</script>';
-                }
+                    echo '<script>alert("Data ISERTED Successfully!")</script>';
             }
-            else if($conn->query($sql) == "TRUE"){
-                echo '<script>alert("Data Inserted Successfully!")</script>';
+            else if($conn->query($queryCheck) == TRUE){
+              $check = "SELECT product_quantity FROM products WHERE product_id = $product_id";
+              $productQuantity = mysqli_query($conn, $check); 
+              (int) $productQuantity = (int) $productQuantity + (int) $product_quantity;
+                $update = "UPDATE products 
+                           SET product_quantity = '$productQuantity'
+                           WHERE product_id = '$product_id'";
+                if($conn->query($update) == TRUE){
+                    echo '<script>alert("Data UPDATED Successfully!")</script>';
+                }
             }
         }
     ?>
