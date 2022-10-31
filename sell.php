@@ -47,15 +47,41 @@
 
     </div>
     <?php 
-        if(isset($_POST['customer_contact'])){
+        if(isset($_POST['customer_contact']) && isset($_POST['product_id'])){
             $customer_name = $_POST['customer_name'];
             $customer_contact = $_POST['customer_contact'];
-            $sql = "INSERT INTO customers (customer_name, customer_contact) 
-                    VALUES ('$customer_name', '$customer_contact')";
-            if($conn->query($sql) == "TRUE"){
-                echo '<script>alert("New customer added Successfully!")</script>';
+            $product_id = $_POST['product_id'];
+            $product_quantity = $_POST['product_quantity'];
+            $queryCheck = "SELECT customer_contact FROM customers WHERE customer_contact='$customer_contact'";
+            $data = $conn->query($queryCheck);
+            if(mysqli_num_rows($data) == 0){
+                $sql = "INSERT INTO customers (customer_name, customer_contact) 
+                        VALUES ('$customer_name', '$customer_contact')";
+              //  if($conn->query($sql) == "TRUE"){
+               // echo '<script>alert("New customer added Successfully!")</script>';
             }
-        }
+            $sellQuery = "SELECT product_quantity FROM products WHERE product_id = '$product_id'";
+            $data = $conn->query($sellQuery);
+            $Quantity = mysqli_num_rows($data);
+            $quantityINT = intval($Quantity);
+            $productQuantityINT = intval($product_quantity);
+            if($quantityINT < $productQuantityINT){
+                echo '<script>alert("Not enough Quantity")</script>';
+            } 
+            else{
+                $productQuantity = intval($Quantity) - intval($product_quantity);
+                $update = "UPDATE products 
+                           SET product_quantity = '$productQuantity'
+                           WHERE product_id = '$product_id'";
+                if($conn->query($update) == TRUE){
+                    echo '<script>alert("Product Sold Successfully!")</script>';
+                }
+            }
+            
+            }
+
+
+        
     ?>
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="wrapper">
 
@@ -77,16 +103,16 @@
         
         
         <div>
-            <input type="number" onkeyup="return event.charCode >= 48" min="1" class="wrapper-product-id-intput" placeholder="Enter Product ID">
+            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_id" class="wrapper-product-id-intput" placeholder="Enter Product ID">
         </div>
         
         <div>
-            <input type="number" onkeyup="return event.charCode >= 48" min="1" class="wrapper-quantity-intput" placeholder="Enter Product Quantity">
+            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_quantity" class="wrapper-quantity-intput" placeholder="Enter Product Quantity">
         </div>
 
         
         <div>
-            <input type="text" class="wrapper-promo-code-intput" placeholder="Enter Promo Code">
+            <input type="text" class="wrapper-promo-code-intput" name="promo_code" placeholder="Enter Promo Code">
         </div>
         
         <div class="wrapper-bill-label">
