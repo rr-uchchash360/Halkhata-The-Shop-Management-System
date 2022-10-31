@@ -57,8 +57,8 @@
             if(mysqli_num_rows($data) == 0){
                 $sql = "INSERT INTO customers (customer_name, customer_contact) 
                         VALUES ('$customer_name', '$customer_contact')";
-              //  if($conn->query($sql) == "TRUE"){
-               // echo '<script>alert("New customer added Successfully!")</script>';
+              if($conn->query($sql) == "TRUE"){
+              $x = 0;
             }
             $sellQuery = "SELECT product_quantity FROM products WHERE product_id = '$product_id'";
             $data = $conn->query($sellQuery);
@@ -79,6 +79,26 @@
             }
             
             }
+            else{
+                $sellQuery = "SELECT product_quantity FROM products WHERE product_id = '$product_id'";
+            $data = $conn->query($sellQuery);
+            $Quantity = mysqli_num_rows($data);
+            $quantityINT = intval($Quantity);
+            $productQuantityINT = intval($product_quantity);
+            if($quantityINT < $productQuantityINT){
+                echo '<script>alert("Not enough Quantity")</script>';
+            } 
+            else{
+                $productQuantity = intval($Quantity) - intval($product_quantity);
+                $update = "UPDATE products 
+                           SET product_quantity = '$productQuantity'
+                           WHERE product_id = '$product_id'";
+                if($conn->query($update) == TRUE){
+                    echo '<script>alert("Product Sold Successfully!")</script>';
+                }
+            }
+            }
+        }
 
 
         
