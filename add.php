@@ -4,7 +4,6 @@
     $password = '';
     $dbname = 'users';
     $conn = mysqli_connect($hostname, $username, $password, $dbname);
-    
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,18 +25,24 @@
             $product_quantity = $_POST['product_quantity'];
             $product_price = $_POST['product_price'];    
             $queryCheck = "SELECT product_id FROM products WHERE product_id = '$product_id'";
-            if($conn->query($queryCheck) == FALSE){
+            $data = $conn->query($queryCheck);
+            if(mysqli_num_rows($data) == 0){
                 $sql = "INSERT INTO products (product_name, product_quantity, product_id, product_price) 
-                    VALUES ('$product_name', '$product_quantity', '$product_id', '$product_price')";
+                        VALUES ('$product_name', '$product_quantity', '$product_id', '$product_price')";
+                $query = $conn->query($sql);
+                if($query){
                     echo '<script>alert("Data ISERTED Successfully!")</script>';
+                }
+                    
             }
-            else if($conn->query($queryCheck) == TRUE){
+            else if(mysqli_num_rows($data) > 0){
               $check = "SELECT product_quantity FROM products WHERE product_id = $product_id";
-              $productQuantity = mysqli_query($conn, $check); 
-              (int) $productQuantity = (int) $productQuantity + (int) $product_quantity;
-                $update = "UPDATE products 
-                           SET product_quantity = '$productQuantity'
-                           WHERE product_id = '$product_id'";
+              $data = $conn->query($check);
+              $Quantity = mysqli_num_rows($data); 
+              $productQuantity = intval($Quantity) + intval($product_quantity);
+              $update = "UPDATE products 
+                         SET product_quantity = '$productQuantity'
+                         WHERE product_id = '$product_id'";
                 if($conn->query($update) == TRUE){
                     echo '<script>alert("Data UPDATED Successfully!")</script>';
                 }
