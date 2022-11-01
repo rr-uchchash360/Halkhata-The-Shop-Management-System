@@ -129,16 +129,6 @@
     text-align: center;
 }
 
-.wrapper{
-    position: center;
-    display: flex;
-    width: 1560px;
-    height: 770px;
-    left: 200px;
-    top: 100px;
-    background: white;
-}
-
 .wrapper-search-product-label{
     position: absolute;
     width: 300px;
@@ -207,6 +197,22 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 20px;
+}
+
+.wrapper-product-id-output{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper-product-name-output{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper-product-quantity-output{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper-product-price-output{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .footer{
