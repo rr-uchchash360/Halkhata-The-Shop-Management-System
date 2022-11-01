@@ -129,16 +129,6 @@
     text-align: center;
 }
 
-.wrapper{
-    position: center;
-    display: flex;
-    width: 1560px;
-    height: 770px;
-    left: 200px;
-    top: 100px;
-    background: white;
-}
-
 .wrapper-return-product-label{
     position: absolute;
     width: 300px;
