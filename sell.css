@@ -133,7 +133,7 @@
     position: absolute;
     width: 300px;
     height: 60px;
-    left: 420px;
+    left: 35%;
     top: 150px;
     font-family: 'Lato';
     font-style: normal;
@@ -154,7 +154,7 @@
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 420px;
+    left: 35%;
     top: 250px;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
@@ -164,7 +164,7 @@
     position: absolute;
     width: 150px;
     height: 24px;
-    left: 420px;
+    left: 35%;
     top: 372px;
     font-family: 'Lato';
     font-style: normal;
@@ -185,7 +185,7 @@
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 420px;
+    left: 35%;
     top: 340px;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
@@ -202,7 +202,7 @@
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 420px;
+    left: 35%;
     top: 430px;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
@@ -219,7 +219,7 @@
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 420px;
+    left: 35%;
     top: 520px;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
@@ -235,7 +235,7 @@
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 420px;
+    left: 35%;
     top: 610px;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
@@ -245,7 +245,7 @@
     position: absolute;
     width: 150px;
     height: 24px;
-    left: 426px;
+    left: 35%;
     top: 690px;
     font-family: 'Lato';
     font-style: normal;
@@ -266,7 +266,7 @@
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 420px;
+    left: 35%;
     top: 720px;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
@@ -281,7 +281,7 @@
     position: absolute;
     width: 440px;
     height: 52px;
-    left: 420px;
+    left: 35%;
     top: 810px;
     background: #abbdca;
     border-radius: 8px;
@@ -302,7 +302,7 @@
     position: absolute;
     width: 440px;
     height: 52px;
-    left: 420px;
+    left: 35%;
     top: 900px;
     background: #009DDC;
     border-radius: 8px;
