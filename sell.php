@@ -62,14 +62,14 @@
             }
             $sellQuery = "SELECT product_quantity FROM products WHERE product_id = '$product_id'";
             $data = $conn->query($sellQuery);
-            $Quantity = mysqli_num_rows($data);
-            $quantityINT = intval($Quantity);
-            $productQuantityINT = intval($product_quantity);
-            if($quantityINT < $productQuantityINT){
+            $Quantity = mysqli_fetch_array($data);
+            //$quantityINT = intval($Quantity);
+            //$productQuantityINT = $product_quantity;
+            if($Quantity['product_quantity'] < $product_quantity){
                 echo '<script>alert("Not enough Quantity")</script>';
             } 
             else{
-                $productQuantity = intval($Quantity) - intval($product_quantity);
+                $productQuantity = $Quantity['product_quantity'] - intval($product_quantity);
                 $update = "UPDATE products 
                            SET product_quantity = '$productQuantity'
                            WHERE product_id = '$product_id'";
@@ -79,26 +79,27 @@
             }
             
             }
+        
             else{
                 $sellQuery = "SELECT product_quantity FROM products WHERE product_id = '$product_id'";
-            $data = $conn->query($sellQuery);
-            $Quantity = mysqli_num_rows($data);
-            $quantityINT = intval($Quantity);
-            $productQuantityINT = intval($product_quantity);
-            if($quantityINT < $productQuantityINT){
-                echo '<script>alert("Not enough Quantity")</script>';
-            } 
-            else{
-                $productQuantity = intval($Quantity) - intval($product_quantity);
-                $update = "UPDATE products 
-                           SET product_quantity = '$productQuantity'
-                           WHERE product_id = '$product_id'";
-                if($conn->query($update) == TRUE){
-                    echo '<script>alert("Product Sold Successfully!")</script>';
+                $data = $conn->query($sellQuery);
+                $Quantity = mysqli_fetch_array($data);
+                //$quantityINT = intval($Quantity);
+                //$productQuantityINT = $product_quantity;
+                if($Quantity['product_quantity'] < $product_quantity){
+                    echo '<script>alert("Not enough Quantity")</script>';
+                } 
+                else{
+                    $productQuantity = $Quantity['product_quantity'] - intval($product_quantity);
+                    $update = "UPDATE products 
+                               SET product_quantity = '$productQuantity'
+                               WHERE product_id = '$product_id'";
+                    if($conn->query($update) == TRUE){
+                        echo '<script>alert("Product Sold Successfully!")</script>';
+                    }
                 }
-            }
-            }
         }
+    }
 
 
         
