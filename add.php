@@ -32,14 +32,13 @@
                 $query = $conn->query($sql);
                 if($query){
                     echo '<script>alert("Data ISERTED Successfully!")</script>';
-                }
-                    
+                }            
             }
             else if(mysqli_num_rows($data) > 0){
               $check = "SELECT product_quantity FROM products WHERE product_id = $product_id";
               $data = $conn->query($check);
-              $Quantity = mysqli_num_rows($data); 
-              $productQuantity = intval($Quantity) + intval($product_quantity);
+              $Quantity = mysqli_fetch_array($data); 
+              $productQuantity = $Quantity['product_quantity'] + intval($product_quantity);
               $update = "UPDATE products 
                          SET product_quantity = '$productQuantity'
                          WHERE product_id = '$product_id'";
