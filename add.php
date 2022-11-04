@@ -86,15 +86,15 @@
         </div>
         
         <div>
-            <input type="text" class="wrapper-product-name-intput" name="product_name" placeholder="Enter Product Name">
+            <input type="text" class="wrapper-product-name-input" name="product_name" placeholder="Enter Product Name">
         </div>
         
         <div>
-            <input type="number" onkeyup="return event.charCode >= 48" name="product_quantity" min="1" class="wrapper-product-quantity-intput" placeholder="Enter Product Quantity">
+            <input type="number" onkeyup="return event.charCode >= 48" name="product_quantity" min="1" class="wrapper-product-quantity-input" placeholder="Enter Product Quantity">
         </div>
 
         <div>
-            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_price" class="wrapper-product-price-intput" placeholder="Enter Product Price">
+            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_price" class="wrapper-product-price-input" placeholder="Enter Product Price">
         </div>
 
         <div>

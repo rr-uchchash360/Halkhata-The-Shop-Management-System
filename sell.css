@@ -174,7 +174,7 @@
     color: #242331;
 }
 
-.wrapper-contact-number-intput{ 
+.wrapper-contact-number-input{ 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -191,7 +191,7 @@
     border-radius: 8px;
 }
 
-.wrapper-product-id-intput{
+.wrapper-product-id-input{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -208,7 +208,7 @@
     border-radius: 8px;
 }
 
-.wrapper-quantity-intput{
+.wrapper-quantity-input{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -225,7 +225,7 @@
     border-radius: 8px;
 }
 
-.wrapper-promo-code-intput{
+.wrapper-promo-code-input{
     display: flex;
     flex-direction: column;
     justify-content: center;

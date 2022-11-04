@@ -143,7 +143,7 @@
     border-radius: 8px;
 }
 
-.wrapper-product-name-intput{ 
+.wrapper-product-name-input{ 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -160,7 +160,7 @@
     border-radius: 8px;
 }
 
-.wrapper-product-quantity-intput{
+.wrapper-product-quantity-input{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -177,7 +177,7 @@
     border-radius: 8px;
 }
 
-.wrapper-product-price-intput{
+.wrapper-product-price-input{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;

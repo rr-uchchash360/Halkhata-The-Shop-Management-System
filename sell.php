@@ -118,22 +118,22 @@
 
         
         <div>
-            <input type="text" class="wrapper-contact-number-intput" name="customer_contact" placeholder="Enter Customer Contact Number">
+            <input type="text" class="wrapper-contact-number-input" name="customer_contact" placeholder="Enter Customer Contact Number">
         </div>
 
         
         
         <div>
-            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_id" class="wrapper-product-id-intput" placeholder="Enter Product ID">
+            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_id" class="wrapper-product-id-input" placeholder="Enter Product ID">
         </div>
         
         <div>
-            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_quantity" class="wrapper-quantity-intput" placeholder="Enter Product Quantity">
+            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_quantity" class="wrapper-quantity-input" placeholder="Enter Product Quantity">
         </div>
 
         
         <div>
-            <input type="text" class="wrapper-promo-code-intput" name="promo_code" placeholder="Enter Promo Code">
+            <input type="text" class="wrapper-promo-code-input" name="promo_code" placeholder="Enter Promo Code">
         </div>
         
         <div class="wrapper-bill-label">
