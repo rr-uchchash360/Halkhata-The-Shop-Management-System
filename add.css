@@ -31,7 +31,7 @@
     font-style: normal;
     font-size: 100%;
     line-height: 20px;
-    left: 6.5%;
+    left: 7%;
     top: 20%;
     text-align: center;
 }
@@ -50,7 +50,7 @@
     font-style: normal;
     font-size: 100%;
     line-height: 20px;
-    left: 13%;
+    left: 7%;
     top: 40%;
     text-align: center;
 }
@@ -69,7 +69,7 @@
     font-style: normal;
     font-size: 100%;
     line-height: 20px;
-    left: 19%;
+    left: 7%;
     top: 50%;
     text-align: center;
 }
@@ -88,7 +88,7 @@
     font-style: normal;
     font-size: 100%;
     line-height: 20px;
-    left: 13.25%;
+    left: 7%;
     top: 60%;
     text-align: center;
 }
@@ -108,7 +108,7 @@
     font-style: normal;
     font-size: 100%;
     line-height: 20px;
-    left: 15%;
+    left: 7%;
     top: 90%;
     text-align: center;
 }
@@ -227,6 +227,7 @@ button{
 a, button{
     font-weight: 500;
     color: #000000;
+    width: 115px;
 }
 
 button:hover{
