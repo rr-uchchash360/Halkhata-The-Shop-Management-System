@@ -15,6 +15,11 @@
     <title>Search</title>
     <link rel="stylesheet" href="search.css">
     <link rel="icon" href="icons/search.png" type="image/icon type">
+    <style>
+        table, th, td {
+           border: 1px solid black;
+        }
+     </style>
 </head>
   
 <body>
@@ -44,39 +49,60 @@
         </div>
 
     </div>
-
+    
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET" class="wrapper">
+
         <div class="wrapper-search-product-label">
             <img src="icons/search.png" style="width: 22px;height: 22px;">
             <label>Search Product</label>
         </div>
-        <div class="wrapper-product-id-label">
-            <label>Product ID</label>
-        </div>
+
         <div>
-            <input type="text" class="wrapper-product-id-input" name="productID" placeholder="Enter Product ID">
-        </div> 
+            <input type="text" class="wrapper-product-name-input" placeholder="Enter Product ID">
+        </div>
+
         <div>
             <button type="submit" class="wrapper-search-button" required>Search</button>
         </div>
-       
+
+
+        <table class="table-for-show">
+            <thead>
+                <tr>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Product Quantity</th>
+                    <th>Product Price</th>
+                    <td class="wrapper-product-id-output"></td>
+                </tr>
+                </thead>
+                
+                  <?php 
+        if(isset($_GET['productID'])){
+            $product_id = $_GET['productID'];
+            $sql = "SELECT * FROM products WHERE product_id = '$product_id'";
+            $query = $conn->query($sql);
+            while($data = mysqli_fetch_assoc($query)){
+                $productID = $data['product_id'];
+                $productName = $data['product_name'];
+                $productQuantity = $data['product_quantity'];
+                $productPrice = $data['product_price'];
+                echo "<tr>
+                        <td>$productID</td>
+                        <td>$productName</td>
+                        <td>$productQuantity</td>
+                        <td>$productPrice</td>
+                    </tr>";
+        
+            }
+        }
+        ?>
+  
+        </table>
+         
+
     </form>
     
-    <?php 
-        if(isset($_GET['productID'])){
-           $product_id = $_GET['productID'];
-            $sql = "SELECT * FROM products WHERE product_id = '$product_id'";
-            echo "<table border='1'>
-                    <thead>
-                        <tr>Product ID</tr>
-                        <tr>Product Name</tr>
-                        <tr>Product Quantity</tr>
-                        <tr>Product Price</tr>
-                    </thead>
-                </table>" ;
-
-        }
-    ?>
     
     
     <div class="footer">
