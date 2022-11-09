@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.dummyText{
+    top: 48%;
+    left: 40%;
+    position: absolute;
+}
+
+.footer{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 200;
+    font-size: 15px;
+    line-height: 120%;
+    color: #000000;
+    position: absolute;
+    right: 0.5%;
+    top: 97%;
+}
