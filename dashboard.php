@@ -70,8 +70,11 @@
         </div>
         <div class="box">
           <div class="right-side">
-            <div class="box-topic">Total Sales</div>
-            <div class="number">12,067</div>
+            <div class="box-topic">Total Revenue</div>
+            <div class="number"><?php $query="SELECT SUM(total_price) FROM orders";
+                                      $result = $conn->query($query); 
+                                      $output = mysqli_fetch_array($result);
+                                      echo $output['SUM(total_price)']; ?></div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>

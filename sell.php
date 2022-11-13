@@ -88,7 +88,11 @@
                 $orderID = intval($orderID);
                 $orderID = "HK" . ($orderID+1);
             }
-            $insertOrderIDquery = "INSERT INTO orders (order_id, customer_contact, product_id, product_quantity, total_price) VALUES ('$orderID', '$customer_contact', '$product_id', '$product_quantity', 5)";
+            $priceQuery = "SELECT product_price FROM products WHERE product_id = '$product_id'";
+            $check = $conn->query($priceQuery);
+            $priceOutput = mysqli_fetch_array($check);
+            $totalPrice = $product_quantity * $priceOutput['product_price'];
+            $insertOrderIDquery = "INSERT INTO orders (order_id, customer_contact, product_id, product_quantity, total_price) VALUES ('$orderID', '$customer_contact', '$product_id', '$product_quantity', '$totalPrice')";
             $insertion = $conn->query($insertOrderIDquery);
             
             }
@@ -120,7 +124,12 @@
                 $orderID = intval($orderID);
                 $orderID = "HK" . ($orderID+1);
             }
-            $insertOrderIDquery = "INSERT INTO orders (order_id, customer_contact, product_id, product_quantity, total_price) VALUES ('$orderID', '$customer_contact', '$product_id', '$product_quantity', 5)";
+            //implementing total price calculator
+            $priceQuery = "SELECT product_price FROM products WHERE product_id = '$product_id'";
+            $check = $conn->query($priceQuery);
+            $priceOutput = mysqli_fetch_array($check);
+            $totalPrice = $product_quantity * $priceOutput['product_price'];
+            $insertOrderIDquery = "INSERT INTO orders (order_id, customer_contact, product_id, product_quantity, total_price) VALUES ('$orderID', '$customer_contact', '$product_id', '$product_quantity', '$totalPrice')";
             $insertion = $conn->query($insertOrderIDquery);
                     if($conn->query($update) == TRUE){
                         echo '<script>alert("Product Sold Successfully!")</script>';
