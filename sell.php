@@ -19,33 +19,31 @@
 
 <body>
 
-    <div class="navbar">
+<div class="navbar">
 
-        <div class="navbar-shop-logo">
-            <a href="add.html"><img src="icons/shop.png" style="width: 90px; height: 90px;">
-        </div>
+<div class="navbar-shop-logo">
+    <a href="dashboard.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
+</div>
 
-        <div class="navbar-add-product-button">
-            <a href="add.html">Add</a>
-        </div>
+<div class="navbar-dashboard-button">
+    <a href='dashboard.php'><button>Dashboard</button></a>
+</div>
 
-        <div class="navbar-search-product-button">
-            <a href="search.html">Search</a>
-        </div>
+<div class="navbar-add-product-button">
+    <a href='add.php'><button>Add</button></a>
+</div>
+<div class="navbar-search-product-button">
+    <a href='search.php'><button>Search</button></a>
+</div>
+<div class="navbar-return-product-button">
+    <a href='return.php'><button>Return</button></a>
+</div>
 
-        <div class="navbar-return-product-button">
-            <a href="return.html">Return</a>
-        </div>
+<div class="navbar-logout-button">
+    <a href='login.php'><button>Logout</button></a>
+</div>
 
-        <div class="navbar-dashboard-button">
-            <a href = login.html>Dashboard</a>
-        </div>
-
-        <div class="navbar-logout-button">
-            <a href = login.html>Log Out</a>
-        </div>
-
-    </div>
+</div>
     <?php 
         if(isset($_POST['customer_contact']) && isset($_POST['product_id'])){
             $customer_name = $_POST['customer_name'];

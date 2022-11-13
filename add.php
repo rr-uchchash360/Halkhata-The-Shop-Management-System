@@ -51,25 +51,25 @@
     <div class="navbar">
 
     <div class="navbar-shop-logo">
-            <a href="add.html"><img src="icons/shop.png" style="width: 90px; height: 90px;">
+            <a href="add.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
         </div>
 
         <div class="navbar-dashboard-button">
-            <a href='login.html'><button>Dashboard</button></a>
+            <a href='login.php'><button>Dashboard</button></a>
         </div>
 
         <div class="navbar-search-product-button">
-            <a href='search.html'><button>Search</button></a>
+            <a href='search.php'><button>Search</button></a>
         </div>
         <div class="navbar-sell-product-button">
-            <a href='sell.html'><button>Sell</button></a>
+            <a href='sell.php'><button>Sell</button></a>
         </div>
         <div class="navbar-return-product-button">
-            <a href='return.html'><button>Return</button></a>
+            <a href='return.php'><button>Return</button></a>
         </div>
 
         <div class="navbar-logout-button">
-            <a href='login.html'><button>Logout</button></a>
+            <a href='login.php'><button>Logout</button></a>
         </div>
 
     </div>
