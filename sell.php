@@ -77,6 +77,21 @@
                     echo '<script>alert("Product Sold Successfully!")</script>';
                 }
             }
+            //implementin order ID generator
+            $orderQuery = "SELECT * FROM orders ORDER BY order_id DESC LIMIT 1";
+            $result = $conn->query($orderQuery);
+            $row = mysqli_fetch_array($result);
+            $lastID = $row['order_id'];
+            if($lastID == " "){
+                $orderID = "HK1";
+            }
+            else{
+                $orderID = substr($lastID, 3);
+                $orderID = intval($orderID);
+                $orderID = "HK" . ($orderID+1);
+            }
+            $insertOrderIDquery = "INSERT INTO orders (order_id, customer_contact, product_id, product_quantity, total_price) VALUES ('$orderID', '$customer_contact', '$product_id', '$product_quantity', 5)";
+            $insertion = $conn->query($insertOrderIDquery);
             
             }
         
@@ -94,6 +109,21 @@
                     $update = "UPDATE products 
                                SET product_quantity = '$productQuantity'
                                WHERE product_id = '$product_id'";
+                    //implementin order ID generator
+            $orderQuery = "SELECT * FROM orders ORDER BY order_id DESC LIMIT 1";
+            $result = $conn->query($orderQuery);
+            $row = mysqli_fetch_array($result);
+            $lastID = $row['order_id'];
+            if($lastID == " "){
+                $orderID = "HK1";
+            }
+            else{
+                $orderID = substr($lastID, 2);
+                $orderID = intval($orderID);
+                $orderID = "HK" . ($orderID+1);
+            }
+            $insertOrderIDquery = "INSERT INTO orders (order_id, customer_contact, product_id, product_quantity, total_price) VALUES ('$orderID', '$customer_contact', '$product_id', '$product_quantity', 5)";
+            $insertion = $conn->query($insertOrderIDquery);
                     if($conn->query($update) == TRUE){
                         echo '<script>alert("Product Sold Successfully!")</script>';
                     }
