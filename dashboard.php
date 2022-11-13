@@ -57,7 +57,10 @@
         <div class="box">
           <div class="right-side">
             <div class="box-topic">Total Order</div>
-            <div class="number">12,345</div>
+            <div class="number"><?php $query="SELECT COUNT(order_id) FROM orders";
+                                      $result = $conn->query($query); 
+                                      $output = mysqli_fetch_array($result);
+                                      echo $output['COUNT(order_id)']; ?></div>
             <div class="indicator">
               <i class='bx bx-up-arrow-alt'></i>
               <span class="text">Up from yesterday</span>
