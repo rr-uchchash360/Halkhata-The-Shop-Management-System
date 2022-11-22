@@ -5,6 +5,12 @@
     $dbname = 'users';
     $conn = mysqli_connect($hostname, $username, $password, $dbname);
 ?>
+<?php 
+  session_start();
+  $userID = $_SESSION['$userID'];
+  if(!empty($userID)){
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   
@@ -31,21 +37,21 @@
         </div>
 
         <div class="navbar-add-product-button">
-            <a href="add.html">Add</a>
+            <a href="add.php">Add</a>
         </div>
         <div class="navbar-sell-product-button">
-            <a href="sell.html">Sell</a>
+            <a href="sell.php">Sell</a>
         </div>
         <div class="navbar-return-product-button">
-            <a href="return.html">Return</a>
+            <a href="return.php">Return</a>
         </div>
 
         <div class="navbar-dashboard-button">
-            <a href = login.html>Dashboard</a>
+            <a href = 'dashboard.php'>Dashboard</a>
         </div>
 
         <div class="navbar-logout-button">
-            <a href = login.html>Log Out</a>
+            <a href = 'logout.php'>Log Out</a>
         </div>
 
     </div>
@@ -115,3 +121,9 @@
 </body>
   
 </html>
+<?php 
+  }
+  else{
+    header('location:login.php');
+  }
+?>
