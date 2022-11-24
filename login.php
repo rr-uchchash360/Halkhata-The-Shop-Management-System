@@ -4,7 +4,9 @@
     $password = '';
     $dbname = 'users';
     $conn = mysqli_connect($hostname, $username, $password, $dbname);
-    
+?>
+<?php
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,7 +27,10 @@
             $query = $conn->query($sql);
 
             if(mysqli_num_rows($query) > 0){
-                echo '<script>alert("You have logged In Successfully!")</script>';
+                $data = mysqli_fetch_array($query);
+                $userID = $data['user_id'];
+                $_SESSION['$userID'] = $userID;
+                header('location:dashboard.php');
             }
         }
     ?>

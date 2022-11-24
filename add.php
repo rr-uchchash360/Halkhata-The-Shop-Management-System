@@ -5,6 +5,12 @@
     $dbname = 'users';
     $conn = mysqli_connect($hostname, $username, $password, $dbname);
 ?>
+<?php 
+  session_start();
+  $userID = $_SESSION['$userID'];
+  if(!empty($userID)){
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   
@@ -69,7 +75,7 @@
         </div>
 
         <div class="navbar-logout-button">
-            <a href='login.php'><button>Logout</button></a>
+            <a href='logout.php'><button>Logout</button></a>
         </div>
 
     </div>
@@ -113,3 +119,9 @@
 </body>
   
 </html>
+<?php 
+  }
+  else{
+    header('location:login.php');
+  }
+?>
