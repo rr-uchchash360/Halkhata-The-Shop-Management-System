@@ -57,34 +57,34 @@
     <div class="navbar">
 
     <div class="navbar-shop-logo">
-            <a href="add.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
+                <a href="update.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
+            </div>
+    
+            <div class="navbar-dashboard-button">
+                <a href='dashboard.php'><button>Dashboard</button></a>
+            </div>
+    
+            <div class="navbar-add-product-button">
+                <a href='add.php'><button>Add</button></a>
+            </div>
+            <div class="navbar-sell-product-button">
+                <a href='sell.php'><button>Sell</button></a>
+            </div>
+            <div class="navbar-return-product-button">
+                <a href='return.php'><button>Return</button></a>
+            </div>
+    
+            <div class="navbar-logout-button">
+                <a href='logout.php'><button>Logout</button></a>
+            </div>
+    
         </div>
-
-        <div class="navbar-dashboard-button">
-            <a href='login.php'><button>Dashboard</button></a>
-        </div>
-
-        <div class="navbar-search-product-button">
-            <a href='update.php'><button>Update</button></a>
-        </div>
-        <div class="navbar-sell-product-button">
-            <a href='sell.php'><button>Sell</button></a>
-        </div>
-        <div class="navbar-return-product-button">
-            <a href='return.php'><button>Return</button></a>
-        </div>
-
-        <div class="navbar-logout-button">
-            <a href='logout.php'><button>Logout</button></a>
-        </div>
-
-    </div>
 
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="wrapper">
     
         <div class="wrapper-update-product-label">
-            <img src="icons/update.png" style="width: 22px;height: 22px;">
-            <label>Update Product</label>
+                <img src="icons/update.png" style="width: 22px;height: 22px;">
+                <label>Update Product</label>
         </div>
 
         <div>
@@ -109,6 +109,7 @@
         
     </form>
 
+    
     <div class="footer">
         <label>©</label>
         <a href = https://github.com/rr-uchchash360>Md. Rafiur Rahman</a>

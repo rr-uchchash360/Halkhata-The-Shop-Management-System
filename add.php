@@ -61,11 +61,11 @@
         </div>
 
         <div class="navbar-dashboard-button">
-            <a href='login.php'><button>Dashboard</button></a>
+            <a href='dashboard.php'><button>Dashboard</button></a>
         </div>
 
-        <div class="navbar-search-product-button">
-            <a href='search.php'><button>Search</button></a>
+        <div class="navbar-update-product-button">
+            <a href='update.php'><button>Update</button></a>
         </div>
         <div class="navbar-sell-product-button">
             <a href='sell.php'><button>Sell</button></a>

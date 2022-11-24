@@ -39,8 +39,8 @@
     <div class="navbar-add-product-button">
       <a href='add.php'><button>Add</button></a>
     </div>
-    <div class="navbar-search-product-button">
-        <a href='search.php'><button>Search</button></a>
+    <div class="navbar-update-product-button">
+        <a href='update.php'><button>Update</button></a>
     </div>
     <div class="navbar-sell-product-button">
         <a href='sell.php'><button>Sell</button></a>
