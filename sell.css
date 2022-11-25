@@ -55,7 +55,7 @@
     text-align: center;
 }
 
-.navbar-search-product-button{
+.navbar-update-product-button{
     color: #242331;
     position: absolute;
     display: flex;
@@ -116,8 +116,8 @@
     position: absolute;
     width: 300px;
     height: 60px;
-    left: 35%;
-    top: 150px;
+    left: 41.25%;
+    top: 10%;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
@@ -137,24 +137,10 @@
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 35%;
-    top: 250px;
+    left: 41.25%;
+    top: 18%;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
-}
-
-.wrapper-contact-number-label{
-    position: absolute;
-    width: 150px;
-    height: 24px;
-    left: 35%;
-    top: 372px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #242331;
 }
 
 .wrapper-contact-number-input{ 
@@ -168,8 +154,8 @@
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 35%;
-    top: 340px;
+    left: 41.25%;
+    top: 26%;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
 }
@@ -185,8 +171,8 @@
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 35%;
-    top: 430px;
+    left: 41.25%;
+    top: 34%;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
 }
@@ -202,8 +188,8 @@
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 35%;
-    top: 520px;
+    left: 41.25%;
+    top: 42%;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
 }
@@ -218,8 +204,8 @@
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 35%;
-    top: 610px;
+    left: 41.25%;
+    top: 50%;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
 }
@@ -228,8 +214,8 @@
     position: absolute;
     width: 150px;
     height: 24px;
-    left: 35%;
-    top: 690px;
+    left: 41.25%;
+    top: 60%;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -249,8 +235,8 @@
     position: absolute;
     width: 440px;
     height: 48px;
-    left: 35%;
-    top: 720px;
+    left: 41.25%;
+    top: 64%;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
 }
@@ -264,8 +250,8 @@
     position: absolute;
     width: 440px;
     height: 52px;
-    left: 35%;
-    top: 810px;
+    left: 41.25%;
+    top: 72%;
     background: #abbdca;
     border-radius: 8px;
     color: #fff;
@@ -285,8 +271,8 @@
     position: absolute;
     width: 440px;
     height: 52px;
-    left: 35%;
-    top: 900px;
+    left: 41.25%;
+    top: 80%;
     background: #009DDC;
     border-radius: 8px;
     color: #fff;
@@ -321,8 +307,8 @@ button:hover{
     font-weight: 200;
     font-size: 15px;
     line-height: 120%;
-    color: #242331;
+    color: #000000;
     position: absolute;
-    left: 0.75%;
-    top: 999px;
+    right: 0.5%;
+    top: 97%;
 }
