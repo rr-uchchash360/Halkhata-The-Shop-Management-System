@@ -161,7 +161,7 @@
 
         
         <div>
-            <input type="text" class="wrapper-contact-number-input" name="customer_contact" placeholder="Enter Customer Contact Number">
+            <input type="text" pattern="[88]{2}[01]{2}[3-9]{1}[0-9]{8}" class="wrapper-contact-number-input" placeholder="Enter Customer Contact Number">
         </div>
 
         

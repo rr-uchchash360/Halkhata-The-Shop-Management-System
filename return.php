@@ -34,8 +34,8 @@
         <div class="navbar-add-product-button">
             <a href="add.php">Add</a>
         </div>
-        <div class="navbar-search-product-button">
-            <a href="search.php">Search</a>
+        <div class="navbar-update-product-button">
+            <a href='update.php'><button>Update</button></a>
         </div>
         <div class="navbar-sell-product-button">
             <a href="sell.php">Sell</a>
