@@ -17,21 +17,19 @@
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Serial Number</th>
               <th scope="col">Product ID</th>
               <th scope="col">Product Name</th>
-              <th scope="col">Buying Price</th>
-              <th scope="col">Selling Price</th>
+              <th scope="col">Price</th>
               <th scope="col">Availability</th>
+              <th scope="col">Operations</th>
             </tr>
           </thead>
           <tbody>
+            <?php
+
+                // Backend Code
             
-
-
-            <!-- Backend Code -->
-            
-
+            ?>
 
           </tbody>
         </table>
