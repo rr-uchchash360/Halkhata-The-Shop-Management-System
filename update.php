@@ -5,6 +5,28 @@
     $dbname = 'users';
     $conn = mysqli_connect($hostname, $username, $password, $dbname);
 ?>
+<?php 
+            if(isset($_GET['updateid'])){
+            $id = $_GET['updateid'];
+            if(isset($_POST['submit'])){
+            
+            $product_name = $_POST['product_name'];
+            $product_quantity = $_POST['product_quantity'];
+            //$product_price = $_POST['product_price'];    
+            //$queryCheck = "SELECT product_id FROM products WHERE product_id = '$product_id'";
+           // $data = $conn->query($queryCheck);
+            
+            $update = "UPDATE products 
+                        SET product_name = '$product_name', product_quantity = '$product_quantity'
+                        WHERE product_id = '$id'";
+            $output = mysqli_query($conn, $update);
+             if($output){
+             header('location:product.php');
+             }
+              }  
+            }
+        
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,26 +41,7 @@
 </head>
 
 <body>
-<?php 
-            
-            if(isset($_GET['updateid'])){
-            $id = $_GET['updateid'];
-            $product_id = $id;
-            $product_name = $_GET['product_name'];
-            $product_quantity = $_GET['product_quantity'];
-            $product_price = $_GET['product_price'];    
-          //  $queryCheck = "SELECT product_id FROM products WHERE product_id = '$product_id'";
-           // $data = $conn->query($queryCheck);
 
-              $update = "UPDATE products 
-                         SET product_name = '$product_name', product_quantity = '$product_quantity', product_price = '$product_price'
-                         WHERE product_id = '$id'";
-             // if($conn->query($update) == TRUE){
-             // header('location:product.php');
-             // }
-              }  
-        
-    ?>
     <div class="navbar">
 
     <div class="navbar-shop-logo">
@@ -69,7 +72,7 @@
     
         <div class="wrapper-add-product-label">
             <img src="icons/add.png" style="width: 22px;height: 22px;">
-            <label>Add Product</label>
+            <label>Update Product</label>
         </div>
 
         <div>
