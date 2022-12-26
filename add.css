@@ -177,7 +177,7 @@
     border-radius: 8px;
 }
 
-.wrapper-product-buying-price-input{
+.wrapper-product-price-input{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -194,7 +194,7 @@
     border-radius: 8px;
 }
 
-.wrapper-product-selling-price-input{
+/* .wrapper-product-selling-price-input{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -209,7 +209,7 @@
     top: 70%;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
-}
+} */
 
 .wrapper-add-product-button{
     flex-direction: row;
@@ -220,7 +220,7 @@
     width: 27.5%;;
     height: 52px;
     left: 41.25%;
-    top: 80%;
+    top: 70%;
     background: #009DDC;
     border-radius: 8px;
     color: #fff;
