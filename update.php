@@ -5,28 +5,7 @@
     $dbname = 'users';
     $conn = mysqli_connect($hostname, $username, $password, $dbname);
 ?>
-<?php 
-            if(isset($_GET['updateid'])){
-            $id = $_GET['updateid'];
-            if(isset($_POST['submit'])){
-            
-            $product_name = $_POST['product_name'];
-            $product_quantity = $_POST['product_quantity'];
-            //$product_price = $_POST['product_price'];    
-            //$queryCheck = "SELECT product_id FROM products WHERE product_id = '$product_id'";
-           // $data = $conn->query($queryCheck);
-            
-            $update = "UPDATE products 
-                        SET product_name = '$product_name', product_quantity = '$product_quantity'
-                        WHERE product_id = '$id'";
-            $output = mysqli_query($conn, $update);
-             if($output){
-             header('location:product.php');
-             }
-              }  
-            }
-        
-    ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -67,35 +46,49 @@
         </div>
 
     </div>
-
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="GET" class="wrapper">
+    <?php 
+           if(isset($_GET['id'])){
+            $id = $_GET['id'];
+        // if(isset($_POST['submit'])){
+                $queryCheck = "SELECT * FROM products WHERE product_id = '$id'";
+                $result = mysqli_query($conn, $queryCheck);
+                $row = mysqli_fetch_array($result);
+                if(mysqli_num_rows($result)>0){
+                    ?>  
+                    <form action="updateData.php" method="POST" class="wrapper">
     
-        <div class="wrapper-add-product-label">
-            <img src="icons/add.png" style="width: 22px;height: 22px;">
-            <label>Update Product</label>
-        </div>
-
-        <div>
-            <input type="text" onkeyup="return event.charCode >= 48" name="product_id" min="1" class="wrapper-product-id-input" placeholder="Enter Product ID">
-        </div>
-        
-        <div>
-            <input type="text" class="wrapper-product-name-input" name="product_name" placeholder="Enter Product Name">
-        </div>
-        
-        <div>
-            <input type="number" onkeyup="return event.charCode >= 48" name="product_quantity" min="1" class="wrapper-product-quantity-input" placeholder="Enter Product Quantity">
-        </div>
-
-        <div>
-            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_price" class="wrapper-product-price-input" placeholder="Enter Product Price">
-        </div>
-
-        <div>
-            <button type="submit" class="wrapper-add-product-button" required>Update Product</button>
-        </div>
-        
-    </form>
+                    <div class="wrapper-add-product-label">
+                        <img src="icons/add.png" style="width: 22px;height: 22px;">
+                        <label>Update Product</label>
+                    </div>
+            
+                    <div>
+                        <input type="text" onkeyup="return event.charCode >= 48" name="product_id" min="1" class="wrapper-product-id-input" value="<?php echo $row['product_id']; ?>"/>
+                    </div>
+                    
+                    <div>
+                        <input type="text" class="wrapper-product-name-input" name="product_name" value="<?php echo $row['product_name']; ?>"/>
+                    </div>
+                    
+                    <div>
+                        <input type="number" onkeyup="return event.charCode >= 48" name="product_quantity" min="1" class="wrapper-product-quantity-input" value="<?php echo $row['product_quantity']; ?>"/>
+                    </div>
+            
+                    <div>
+                        <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_price" class="wrapper-product-price-input" value="<?php echo $row['product_price']; ?>"/>
+                    </div>
+            
+                    <div>
+                        <button type="submit" class="wrapper-add-product-button" name="submit" required>Update Product</button>
+                    </div>
+                    
+                </form>
+                <?php 
+                }}
+                ?>
+            
+    
+   
 
     <div class="footer">
         <label>©</label>
