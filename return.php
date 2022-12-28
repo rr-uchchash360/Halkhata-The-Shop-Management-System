@@ -32,12 +32,15 @@
             <a href="add.html"><img src="icons/shop.png" style="width: 90px; height: 90px;">
         </div>
 
+        <div class="navbar-product-button">
+            <a href='product.php'><button>Products</button></a>
+        </div>
         <div class="navbar-add-product-button">
             <a href="add.php">Add</a>
         </div>
-        <div class="navbar-update-product-button">
+        <!-- <div class="navbar-update-product-button">
             <a href='update.php'><button>Update</button></a>
-        </div>
+        </div> -->
         <div class="navbar-sell-product-button">
             <a href="sell.php">Sell</a>
         </div>

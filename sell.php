@@ -36,12 +36,15 @@
     <a href='dashboard.php'><button>Dashboard</button></a>
 </div>
 
+<div class="navbar-product-button">
+            <a href='product.php'><button>Products</button></a>
+        </div>
 <div class="navbar-add-product-button">
     <a href='add.php'><button>Add</button></a>
 </div>
-<div class="navbar-update-product-button">
+<!-- <div class="navbar-update-product-button">
     <a href='update.html'><button>Update</button></a>
-</div>
+</div> -->
 <div class="navbar-return-product-button">
     <a href='return.php'><button>Return</button></a>
 </div>
