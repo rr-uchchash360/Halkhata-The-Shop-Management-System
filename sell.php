@@ -200,7 +200,7 @@
 
 
     <!-- code added here, you've to work here. -->
-    <div class="recent-sale">
+    <div class="recent-sell">
         
         <table class="table">
           <thead>
