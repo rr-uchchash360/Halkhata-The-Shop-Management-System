@@ -3,13 +3,13 @@ order_id VARCHAR(20),
 customer_contact VARCHAR(20),
 product_id VARCHAR(20), 
 product_quantity INT, 
-total_price INT
+total_price INT,
 PRIMARY KEY(order_id)
 );
 
 CREATE TABLE customers(
 customer_name VARCHAR(20),
-customer_contact VARCHAR(20)
+customer_contact VARCHAR(20),
 PRIMARY KEY(customer_contact)
 );
 
@@ -17,12 +17,12 @@ CREATE TABLE products(
 product_id VARCHAR(20),
 product_name VARCHAR(20),
 product_quantity INT, 
-product_price INT
+product_price INT,
 PRIMARY KEY(product_id) 
 );
 
 CREATE TABLE users(
 user_id VARCHAR(20),
-user_password VARCHAR(20)
+user_password VARCHAR(20),
 PRIMARY KEY(user_id)
 );

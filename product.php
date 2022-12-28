@@ -53,7 +53,15 @@
     </div>
     <div class="container">
         <button class="btn btn-primary my-5"><a href ="add.php" class="text-light">Add Product</a></button>
+        <div class="col-md-7">
+        <form action="" method="GET">
+        <div class="input-group mb-3">
+            <input type="text" name="search" required value="<?php if(isset($_GET['search'])){echo $_GET['search'];} ?>" class="form-control" placeholder="Search Product">
+            <button type="submit" class="btn btn-primary">Search</button> 
+        </div>
+        </form>
 
+        </div>
         <table class="table">
           <thead>
             <tr>
@@ -66,6 +74,35 @@
           </thead>
           <tbody>
             <?php
+            if(isset($_GET['search'])){
+              $filterValues = $_GET['search'];
+              $query = "SELECT * FROM products WHERE CONCAT(product_id, product_name, product_price, product_quantity) LIKE '%$filterValues%'";
+              $result = mysqli_query($conn, $query);
+              if(mysqli_num_rows($result)>0){
+                  foreach($result as $row){
+                    $id = $row['product_id'];
+                    $name = $row['product_name'];
+                    $price = $row['product_price'];
+                    $quantity = $row['product_quantity'];
+                    echo '<tr scope="row">
+                    <td>'.$id.'</td>
+                    <td>'.$name.'</td>
+                    <td>'.$price.'</td>
+                    <td>'.$quantity.'</td>
+                    <td>
+                    <button class="btn btn-primary"><a href = "update.php?id='.$id.'" class="text-light">Update</a></button>
+                    <button class="btn btn-danger"><a href = "delete.php?deleteid='.$id.'" class="text-light">Delete</a></button> 
+                    </td>
+                  </tr>';
+                  }
+              }
+              else{
+                echo '<tr scope="row">
+                  <td>No Product Found</td>
+                </tr>';
+              }
+            }
+            else{
               $sql = "SELECT * FROM products";
               $result = mysqli_query($conn, $sql);
               
@@ -85,6 +122,7 @@
                   </td>
                 </tr>';
               }
+            }
             ?>
           
           </tbody>
