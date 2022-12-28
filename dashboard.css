@@ -46,11 +46,11 @@
   font-size: 100%;
   line-height: 20px;
   left: 7%;
-  top: 35%;
+  top: 45%;
   text-align: center;
 }
 
-.navbar-update-product-button{
+/* .navbar-update-product-button{
   color: #242331;
   position: absolute;
   display: flex;
@@ -66,6 +66,25 @@
   line-height: 20px;
   left: 7%;
   top: 45%;
+  text-align: center;
+} */
+
+.navbar-product-button{
+  color: #242331;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7% 7%;
+  height: 5%;
+  border-radius: 15%;
+  color: #fff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  line-height: 20px;
+  left: 7%;
+  top: 35%;
   text-align: center;
 }
 
