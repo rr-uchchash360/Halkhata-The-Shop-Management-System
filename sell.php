@@ -18,6 +18,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <title>Sell Product</title>
     <link rel="stylesheet" href="sell.css">
     <link rel="icon" href="icons/sell.png" type="image/icon type">
@@ -196,6 +197,31 @@
         </div>
         
     </form>
+
+
+    <!-- code added here, you've to work here. -->
+    <div class="recent-sale">
+        
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Product ID</th>
+              <th scope="col">Product Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Availability</th>
+              <th scope="col">Operations</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- Backend Code -->
+          
+            </tbody>
+        </table>
+
+    </div>
+
+
     
     <div class="footer">
         <label>©</label>
