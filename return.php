@@ -29,7 +29,7 @@
     <div class="navbar">
 
         <div class="navbar-shop-logo">
-            <a href="add.html"><img src="icons/shop.png" style="width: 90px; height: 90px;">
+            <a href="dashboard.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
         </div>
 
         <div class="navbar-product-button">
@@ -63,10 +63,31 @@
         </div>
         
         <div>
-            <input type="text" class="wrapper-customer-name-input" placeholder="Enter Customer Name">
+            <input type="text" name="order_id" class="wrapper-customer-name-input" placeholder="Enter Order ID">
         </div>
+        <?php 
+        if(isset($_POST['return']) && isset($_POST['order_id'])){
+            $orderID = $_POST['order_id'];
+            $query = "SELECT * FROM orders WHERE order_id = '$orderID'";
+            $result = mysqli_query($conn, $query);
+            $row = mysqli_fetch_array($result);
+            $productID = $row['product_id'];
+           // $returnQuantity = $row['product_quantity'];
+            if($result){
+                $check = "SELECT product_quantity FROM products WHERE product_id = '$productID'";
+                $data = mysqli_query($conn, $check);
+                $Quantity = mysqli_fetch_array($data); 
+                $productQuantity = $Quantity['product_quantity'] + $row['product_quantity'];
+                $update = "UPDATE products 
+                         SET product_quantity = '$productQuantity'
+                         WHERE product_id = '$productID'";
+                $deleteQuery = "DELETE FROM orders WHERE order_id = '$orderID'";
+                $delete = $conn->query($deleteQuery);
+            }
+        }
 
-        <div>
+        ?>
+        <!-- <div>
             <input type="text" class="wrapper-contact-number-intput" placeholder="Enter Customer Contact Number">
         </div>
         
@@ -77,14 +98,14 @@
         <div>
             <input type="text" class="wrapper-quantity-intput" name="product-quantity" placeholder="Enter Product Quantity">
         </div>
-
+            -->
         <div>
-            <button type="submit" class="wrapper-restock-button" required>Restock</button>
-        </div>
+            <button type="submit" name="return" class="wrapper-restock-button" required>Return</button>
+        </div> 
         
     </form>
 
-    <div class="recent-return">
+    <!-- <div class="recent-return">
         
         <table class="table">
           <thead>
@@ -102,7 +123,7 @@
             </tbody>
         </table>
 
-    </div>
+    </div> -->
 
     <div class="footer">
         <label>©</label>

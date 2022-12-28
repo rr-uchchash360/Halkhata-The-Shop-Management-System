@@ -5,6 +5,12 @@
     $dbname = 'users';
     $conn = mysqli_connect($hostname, $username, $password, $dbname);
 ?>
+<?php 
+  session_start();
+  $userID = $_SESSION['$userID'];
+  if(!empty($userID)){
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   
@@ -12,6 +18,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <title>Sell Product</title>
     <link rel="stylesheet" href="sell.css">
     <link rel="icon" href="icons/sell.png" type="image/icon type">
@@ -29,18 +36,21 @@
     <a href='dashboard.php'><button>Dashboard</button></a>
 </div>
 
+<div class="navbar-product-button">
+            <a href='product.php'><button>Products</button></a>
+        </div>
 <div class="navbar-add-product-button">
     <a href='add.php'><button>Add</button></a>
 </div>
-<div class="navbar-search-product-button">
-    <a href='search.php'><button>Search</button></a>
-</div>
+<!-- <div class="navbar-update-product-button">
+    <a href='update.html'><button>Update</button></a>
+</div> -->
 <div class="navbar-return-product-button">
     <a href='return.php'><button>Return</button></a>
 </div>
 
 <div class="navbar-logout-button">
-    <a href='login.php'><button>Logout</button></a>
+    <a href='logout.php'><button>Logout</button></a>
 </div>
 
 </div>
@@ -155,7 +165,7 @@
 
         
         <div>
-            <input type="text" class="wrapper-contact-number-input" name="customer_contact" placeholder="Enter Customer Contact Number">
+            <input type="text" pattern="[88]{2}[01]{2}[3-9]{1}[0-9]{8}" class="wrapper-contact-number-input" placeholder="Enter Customer Contact Number">
         </div>
 
         
@@ -190,14 +200,43 @@
         </div>
         
     </form>
+
+
+    <!-- code added here, you've to work here. -->
+    <div class="recent-sell">
+        
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Product ID</th>
+              <th scope="col">Product Name</th>
+              <th scope="col">Price</th>
+              <th scope="col">Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <!-- Backend Code -->
+          
+            </tbody>
+        </table>
+
+    </div>
+
+
     
     <div class="footer">
         <label>©</label>
         <a href = https://github.com/rr-uchchash360>Md. Rafiur Rahman</a>
         <a href = https://github.com/zubayertahmid>Zubayer Tahmid</a>
-        <a href = https://github.com/sadman89>Sadman Sadiq</a>
     </div>
 
 </body>
   
 </html>
+<?php 
+  }
+  else{
+    header('location:login.php');
+  }
+?>
