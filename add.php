@@ -119,7 +119,6 @@
               <th scope="col">Product Name</th>
               <th scope="col">Price</th>
               <th scope="col">Availability</th>
-              <th scope="col">Operations</th>
             </tr>
           </thead>
           <tbody>
