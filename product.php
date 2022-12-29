@@ -39,7 +39,7 @@
             <a href="sell.php">Sell</a>
         </div>
         <div class="navbar-return-product-button">
-            <a href="return.php">return</a>
+            <a href="return.php">Return</a>
         </div>
 
         <div class="navbar-dashboard-button">
