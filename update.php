@@ -63,19 +63,19 @@
                     </div>
             
                     <div>
-                        <input type="text" onkeyup="return event.charCode >= 48" name="product_id" min="1" class="wrapper-product-id-input" value="<?php echo $row['product_id']; ?>"/>
+                        <input type="text" onkeyup="return event.charCode >= 48" name="product_id" min="1" class="wrapper-product-id-input" value="<?php echo $row['product_id']; ?>" required/>
                     </div>
                     
                     <div>
-                        <input type="text" class="wrapper-product-name-input" name="product_name" value="<?php echo $row['product_name']; ?>"/>
+                        <input type="text" class="wrapper-product-name-input" name="product_name" value="<?php echo $row['product_name']; ?>" required/>
                     </div>
                     
                     <div>
-                        <input type="number" onkeyup="return event.charCode >= 48" name="product_quantity" min="1" class="wrapper-product-quantity-input" value="<?php echo $row['product_quantity']; ?>"/>
+                        <input type="number" onkeyup="return event.charCode >= 48" name="product_quantity" min="1" class="wrapper-product-quantity-input" value="<?php echo $row['product_quantity']; ?>" required/>
                     </div>
             
                     <div>
-                        <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_price" class="wrapper-product-price-input" value="<?php echo $row['product_price']; ?>"/>
+                        <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_price" class="wrapper-product-price-input" value="<?php echo $row['product_price']; ?>" required/>
                     </div>
             
                     <div>

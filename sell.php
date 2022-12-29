@@ -13,6 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sell Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="sell.css">
     <link rel="icon" href="icons/sell.png" type="image/icon type">
 </head>
@@ -150,40 +151,40 @@
 
         
         <div>
-            <input type="text" class="wrapper-customer-name-input" name="customer_name" placeholder="Enter Customer Name">
+            <input type="text" class="wrapper-customer-name-input" name="customer_name" placeholder="Enter Customer Name" required>
         </div>
 
         
         <div>
-            <input type="text" class="wrapper-contact-number-input" name="customer_contact" placeholder="Enter Customer Contact Number">
+            <input type="text" class="wrapper-contact-number-input" name="customer_contact" placeholder="Enter Customer Contact Number" required>
         </div>
 
         
         
         <div>
-            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_id" class="wrapper-product-id-input" placeholder="Enter Product ID">
+            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_id" class="wrapper-product-id-input" placeholder="Enter Product ID" required>
         </div>
         
         <div>
-            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_quantity" class="wrapper-quantity-input" placeholder="Enter Product Quantity">
+            <input type="number" onkeyup="return event.charCode >= 48" min="1" name="product_quantity" class="wrapper-quantity-input" placeholder="Enter Product Quantity" required>
         </div>
 
-        
+<!--         
         <div>
             <input type="text" class="wrapper-promo-code-input" name="promo_code" placeholder="Enter Promo Code">
-        </div>
+        </div> -->
         
-        <div class="wrapper-bill-label">
+        <!-- <div class="wrapper-bill-label">
             <label>Total Bill</label>
-        </div>
+        </div> -->
         
-        <div>
+        <!-- <div>
             <output type="text" class="wrapper-bill-output">
-        </div>
+        </div> -->
 
-        <div>
+        <!-- <div>
             <button type="submit" class="wrapper-add-to-cart-button" required>Add to Cart</button>
-        </div>
+        </div> -->
 
         <div>
             <button type="submit" class="wrapper-sell-button" required>Sell Product</button>
@@ -195,7 +196,6 @@
         <label>©</label>
         <a href = https://github.com/rr-uchchash360>Md. Rafiur Rahman</a>
         <a href = https://github.com/zubayertahmid>Zubayer Tahmid</a>
-        <a href = https://github.com/sadman89>Sadman Sadiq</a>
     </div>
 
 </body>
