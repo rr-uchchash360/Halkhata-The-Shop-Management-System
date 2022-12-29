@@ -58,7 +58,7 @@
     <div class="navbar">
 
     <div class="navbar-shop-logo">
-            <a href="add.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
+            <a href="dashboard.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
         </div>
 
         <div class="navbar-dashboard-button">
@@ -114,7 +114,7 @@
         
     </form>
 
-    <div class="recent-add">
+    <!-- <div class="recent-add">
         
         <table class="table">
           <thead>
@@ -127,12 +127,12 @@
           </thead>
           <tbody>
 
-            <!-- Backend Code -->
+            Backend Code
           
             </tbody>
         </table>
 
-    </div>
+    </div> -->
 
     <div class="footer">
         <label>©</label>

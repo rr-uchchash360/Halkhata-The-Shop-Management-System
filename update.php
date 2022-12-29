@@ -15,8 +15,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Product</title>
-    <link rel="stylesheet" href="add.css">
-    <link rel="icon" href="icons/add.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="update.css">
+    <link rel="icon" href="icons/update.png" type="image/icon type">
 </head>
 
 <body>
@@ -24,15 +25,15 @@
     <div class="navbar">
 
     <div class="navbar-shop-logo">
-            <a href="add.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
+            <a href="dashboard.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
         </div>
 
         <div class="navbar-dashboard-button">
             <a href='login.php'><button>Dashboard</button></a>
         </div>
 
-        <div class="navbar-search-product-button">
-            <a href='search.php'><button>Search</button></a>
+        <div class="navbar-add-product-button">
+            <a href='add.php'><button>Add</button></a>
         </div>
         <div class="navbar-sell-product-button">
             <a href='sell.php'><button>Sell</button></a>
@@ -57,8 +58,8 @@
                     ?>  
                     <form action="updateData.php" method="POST" class="wrapper">
     
-                    <div class="wrapper-add-product-label">
-                        <img src="icons/add.png" style="width: 22px;height: 22px;">
+                    <div class="wrapper-update-product-label">
+                        <img src="icons/update.png" style="width: 22px;height: 22px;">
                         <label>Update Product</label>
                     </div>
             
@@ -79,7 +80,7 @@
                     </div>
             
                     <div>
-                        <button type="submit" class="wrapper-add-product-button" name="submit" required>Update Product</button>
+                        <button type="submit" class="wrapper-update-product-button" name="submit" required>Update Product</button>
                     </div>
                     
                 </form>
@@ -94,7 +95,6 @@
         <label>©</label>
         <a href = https://github.com/rr-uchchash360>Md. Rafiur Rahman</a>
         <a href = https://github.com/zubayertahmid>Zubayer Tahmid</a>
-        <a href = https://github.com/sadman89>Sadman Sadiq</a>
     </div>
 
 </body>
