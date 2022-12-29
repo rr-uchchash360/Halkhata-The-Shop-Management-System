@@ -17,7 +17,7 @@
     <title>Update Product</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="update.css">
-    <link rel="icon" href="icons/add.png" type="image/icon type">
+    <link rel="icon" href="icons/update.png" type="image/icon type">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
     <div class="navbar">
 
     <div class="navbar-shop-logo">
-            <a href="add.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
+            <a href="dashboard.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
         </div>
 
         <div class="navbar-dashboard-button">
@@ -58,8 +58,8 @@
                     ?>  
                     <form action="updateData.php" method="POST" class="wrapper">
     
-                    <div class="wrapper-add-product-label">
-                        <img src="icons/add.png" style="width: 22px;height: 22px;">
+                    <div class="wrapper-update-product-label">
+                        <img src="icons/update.png" style="width: 22px;height: 22px;">
                         <label>Update Product</label>
                     </div>
             
@@ -80,7 +80,7 @@
                     </div>
             
                     <div>
-                        <button type="submit" class="wrapper-add-product-button" name="submit" required>Update Product</button>
+                        <button type="submit" class="wrapper-update-product-button" name="submit" required>Update Product</button>
                     </div>
                     
                 </form>
