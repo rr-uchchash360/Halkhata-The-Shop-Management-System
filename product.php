@@ -20,8 +20,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="return.css">
-    <link rel="icon" href="icons/return.png" type="image/icon type">
+    <link rel="stylesheet" href="product.css">
+    <link rel="icon" href="icons/product.png" type="image/icon type">
 </head>
 
 <body>
@@ -35,11 +35,11 @@
         <div class="navbar-add-product-button">
             <a href="add.php">Add</a>
         </div>
-        <div class="navbar-update-product-button">
-            <a href='update.php'><button>Update</button></a>
-        </div>
         <div class="navbar-sell-product-button">
             <a href="sell.php">Sell</a>
+        </div>
+        <div class="navbar-return-product-button">
+            <a href="return.php">return</a>
         </div>
 
         <div class="navbar-dashboard-button">
