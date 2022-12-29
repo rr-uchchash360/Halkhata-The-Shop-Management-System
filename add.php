@@ -58,7 +58,7 @@
     <div class="navbar">
 
     <div class="navbar-shop-logo">
-            <a href="add.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
+            <a href="dashboard.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
         </div>
 
         <div class="navbar-dashboard-button">
