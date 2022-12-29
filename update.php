@@ -15,7 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Product</title>
-    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="update.css">
     <link rel="icon" href="icons/add.png" type="image/icon type">
 </head>
 
@@ -31,8 +32,8 @@
             <a href='login.php'><button>Dashboard</button></a>
         </div>
 
-        <div class="navbar-search-product-button">
-            <a href='search.php'><button>Search</button></a>
+        <div class="navbar-add-product-button">
+            <a href='add.php'><button>Add</button></a>
         </div>
         <div class="navbar-sell-product-button">
             <a href='sell.php'><button>Sell</button></a>
