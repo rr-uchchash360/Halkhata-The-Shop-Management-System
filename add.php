@@ -114,7 +114,7 @@
         
     </form>
 
-    <div class="recent-add">
+    <!-- <div class="recent-add">
         
         <table class="table">
           <thead>
@@ -127,12 +127,12 @@
           </thead>
           <tbody>
 
-            <!-- Backend Code -->
+            Backend Code
           
             </tbody>
         </table>
 
-    </div>
+    </div> -->
 
     <div class="footer">
         <label>©</label>
