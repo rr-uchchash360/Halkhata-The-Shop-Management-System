@@ -54,19 +54,8 @@
         </div>
 
     </div>
-
-    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="wrapper">
-
-        <div class="wrapper-return-product-label">
-            <img src="icons/return.png" style="width: 22px;height: 22px;">
-            <label>Return Product</label>
-        </div>
-        
-        <div>
-            <input type="text" name="order_id" class="wrapper-customer-name-input" placeholder="Enter Order ID">
-        </div>
-        <?php 
-        if(isset($_POST['return']) && isset($_POST['order_id'])){
+    <?php 
+        if(isset($_POST['order_id'])){
             $orderID = $_POST['order_id'];
             $query = "SELECT * FROM orders WHERE order_id = '$orderID'";
             $result = mysqli_query($conn, $query);
@@ -77,6 +66,7 @@
                 $check = "SELECT product_quantity FROM products WHERE product_id = '$productID'";
                 $data = mysqli_query($conn, $check);
                 $Quantity = mysqli_fetch_array($data); 
+
                 $productQuantity = $Quantity['product_quantity'] + $row['product_quantity'];
                 $update = "UPDATE products 
                          SET product_quantity = '$productQuantity'
@@ -87,6 +77,17 @@
         }
 
         ?>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="wrapper">
+
+        <div class="wrapper-return-product-label">
+            <img src="icons/return.png" style="width: 22px;height: 22px;">
+            <label>Return Product</label>
+        </div>
+        
+        <div>
+            <input type="text" name="order_id" class="wrapper-customer-name-input" placeholder="Enter Order ID" required>
+        </div>
+        
         <!-- <div>
             <input type="text" class="wrapper-contact-number-intput" placeholder="Enter Customer Contact Number">
         </div>
@@ -118,7 +119,7 @@
           </thead>
           <tbody>
 
-            <!-- Backend Code -->
+            Backend Code -->
           
             </tbody>
         </table>

@@ -120,7 +120,7 @@
             $result = $conn->query($orderQuery);
             $row = mysqli_fetch_array($result);
             $lastID = $row['order_id'];
-            if($lastID == " "){
+            if($lastID == ""){
                 $orderID = "HK1";
             }
             else{
