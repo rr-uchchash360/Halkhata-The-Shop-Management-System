@@ -32,6 +32,9 @@
                 $_SESSION['$userID'] = $userID;
                 header('location:dashboard.php');
             }
+            else{
+                echo '<script>alert("Wrond ID or Password")</script>';
+            }
         }
     ?>
     <div class="page">
