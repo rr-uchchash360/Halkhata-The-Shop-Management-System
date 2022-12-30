@@ -96,9 +96,17 @@
 
       <!-- eliminated form here -->
 
-      
     </div>
   </section>
+
+  <div class="date-time-label">
+    <lable>Current Date & Time</label>
+  </div>
+  <div class="time">
+    <span id="time"> </span></h1>
+    <script src="index.js">   </script>
+  </div>
+
   <div class="footer">
       <label>©</label>
       <a href = https://github.com/rr-uchchash360>Md. Rafiur Rahman</a>

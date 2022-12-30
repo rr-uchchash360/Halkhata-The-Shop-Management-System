@@ -182,7 +182,7 @@ button:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 4 - 15px);
+  width: calc(100% / 2 - 15px);
   background: #fff;
   padding: 15px 14px;
   border-radius: 12px;
@@ -384,4 +384,29 @@ button:hover{
   position: absolute;
   right: 0.5%;
   top: 97%;
+}
+
+
+
+
+.date-time-label{
+  position: absolute;
+  left: 38%;
+  top: 53%;
+  font-weight: 500;
+  font-size: 35px;
+  color: #0A2558;
+  justify-content: center;
+  width: 35%;
+}
+
+.time{
+  position: absolute;
+  left: 35%;
+  top: 60%;
+  font-weight: 500;
+  font-size: 45px;
+  color: #0A2558;
+  justify-content: center;
+  width: 35%;
 }
