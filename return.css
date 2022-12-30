@@ -26,7 +26,7 @@
     padding: 7% 7%;
     height: 5%;
     border-radius: 10%;
-    color: #fff;
+    color: #009DDC;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-size: 100%;
@@ -45,7 +45,7 @@
     padding: 7% 7%;
     height: 5%;
     border-radius: 15%;
-    color: #fff;
+    color: #009DDC;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-size: 100%;
@@ -64,7 +64,7 @@
     padding: 7% 7%;
     height: 5%;
     border-radius: 15%;
-    color: #fff;
+    color: #009DDC;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-size: 100%;
@@ -102,7 +102,7 @@
     padding: 7% 7%;
     height: 5%;
     border-radius: 15%;
-    color: #fff;
+    color: #009DDC;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-size: 100%;
@@ -121,7 +121,7 @@
     padding: 7% 7%;
     height: 5%;
     border-radius: 15%;
-    color: #fff;
+    color: #009DDC;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-size: 100%;
@@ -145,7 +145,7 @@
     color: #242331;
 }
 
-.wrapper-customer-name-input{ 
+/* .wrapper-customer-name-input{ 
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -177,9 +177,9 @@
     top: 40%;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
-}
+} */
 
-.wrapper-product-id-input{
+.wrapper-order-id-input{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -196,7 +196,7 @@
     border-radius: 8px;
 }
 
-.wrapper-product-quantity-input{
+/* .wrapper-product-quantity-input{
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -211,7 +211,7 @@
     top: 60%;
     border: 1px solid #C5C5C5;
     border-radius: 8px;
-}
+} */
 
 .wrapper-restock-button{
     flex-direction: row;
@@ -233,7 +233,7 @@
     line-height: 20px;
 }
 
-.recent-return{
+/* .recent-return{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -244,7 +244,7 @@
     height: 52px;
     left: 60%;
     top: 16%;
-    /* background: #009DDC; */
+    background: #009DDC;
     border-radius: 8px;
     color: rgb(0, 0, 0);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -252,7 +252,7 @@
     font-weight: 100;
     font-size: 11.5px;
     line-height: 20px;
-}
+} */
 
 button{
     padding: 9px 25px;

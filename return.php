@@ -85,7 +85,7 @@
         </div>
         
         <div>
-            <input type="text" name="order_id" class="wrapper-customer-name-input" placeholder="Enter Order ID" required>
+            <input type="text" name="order_id" class="wrapper-order-id-input" placeholder="Enter Order ID" required>
         </div>
         
         <!-- <div>
