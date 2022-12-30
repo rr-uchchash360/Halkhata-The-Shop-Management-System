@@ -32,25 +32,24 @@
             <a href="dashboard.php"><img src="icons/shop.png" style="width: 90px; height: 90px;">
         </div>
 
+        <div class="navbar-dashboard-button">
+            <a href ='dashboard.php'><button>Dashboard</button></a>
+        </div>
         <div class="navbar-product-button">
             <a href='product.php'><button>Products</button></a>
         </div>
         <div class="navbar-add-product-button">
-            <a href="add.php">Add</a>
+            <a href="add.php"><button>Add</button></a>
         </div>
         <!-- <div class="navbar-update-product-button">
             <a href='update.php'><button>Update</button></a>
         </div> -->
         <div class="navbar-sell-product-button">
-            <a href="sell.php">Sell</a>
-        </div>
-
-        <div class="navbar-dashboard-button">
-            <a href ='dashboard.php'>Dashboard</a>
+            <a href="sell.php"><button>Sell</button></a>
         </div>
 
         <div class="navbar-logout-button">
-            <a href ='logout.php'>Log Out</a>
+            <a href ='logout.php'><button>Log Out</button></a>
         </div>
 
     </div>

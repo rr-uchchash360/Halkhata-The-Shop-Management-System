@@ -26,7 +26,7 @@
     padding: 7% 7%;
     height: 5%;
     border-radius: 10%;
-    color: #009DDC;
+    color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-size: 100%;
@@ -45,7 +45,7 @@
     padding: 7% 7%;
     height: 5%;
     border-radius: 15%;
-    color: #009DDC;
+    color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-size: 100%;
@@ -64,7 +64,7 @@
     padding: 7% 7%;
     height: 5%;
     border-radius: 15%;
-    color: #009DDC;
+    color: #fff;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: normal;
     font-size: 100%;
@@ -74,7 +74,7 @@
     text-align: center;
 }
 
-/* .navbar-update-product-button{
+.navbar-sell-product-button{
     color: #242331;
     position: absolute;
     display: flex;
@@ -89,45 +89,7 @@
     font-size: 100%;
     line-height: 20px;
     left: 7%;
-    top: 50%;
-    text-align: center;
-} */
-
-.navbar-sell-product-button{
-    color: #242331;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 7% 7%;
-    height: 5%;
-    border-radius: 15%;
-    color: #009DDC;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: normal;
-    font-size: 100%;
-    line-height: 20px;
-    left: 7%;
     top: 60%;
-    text-align: center;
-}
-
-.navbar-logout-button{
-    color: #242331;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 7% 7%;
-    height: 5%;
-    border-radius: 15%;
-    color: #009DDC;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: normal;
-    font-size: 100%;
-    line-height: 20px;
-    left: 7%;
-    top: 90%;
     text-align: center;
 }
 
@@ -143,6 +105,25 @@
     font-size: 180%;
     line-height: 60px;
     color: #242331;
+}
+
+.navbar-logout-button{
+    color: #242331;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7% 7%;
+    height: 5%;
+    border-radius: 15%;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 20px;
+    left: 7%;
+    top: 90%;
+    text-align: center;
 }
 
 /* .wrapper-customer-name-input{ 

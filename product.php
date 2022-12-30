@@ -33,21 +33,21 @@
         </div>
 
         <div class="navbar-add-product-button">
-            <a href="add.php">Add</a>
+            <a href="add.php"><button>Add</button></a>
         </div>
         <div class="navbar-sell-product-button">
-            <a href="sell.php">Sell</a>
+            <a href="sell.php"><button>Sell</button></a>
         </div>
         <div class="navbar-return-product-button">
-            <a href="return.php">Return</a>
+            <a href="return.php"><button>Return</button></a>
         </div>
 
         <div class="navbar-dashboard-button">
-            <a href ='dashboard.php'>Dashboard</a>
+            <a href ='dashboard.php'><button>Dashboard</button></a>
         </div>
 
         <div class="navbar-logout-button">
-            <a href ='logout.php'>Log Out</a>
+            <a href ='logout.php'><button>Log Out</button></a>
         </div>
 
     </div>
