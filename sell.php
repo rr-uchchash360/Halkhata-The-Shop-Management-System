@@ -5,6 +5,12 @@
     $dbname = 'users';
     $conn = mysqli_connect($hostname, $username, $password, $dbname);
 ?>
+<?php 
+  session_start();
+  $userID = $_SESSION['$userID'];
+  if(!empty($userID)){
+
+?>
 <!DOCTYPE html>
 <html lang="en">
   
@@ -204,3 +210,9 @@
 </body>
   
 </html>
+<?php 
+  }
+  else{
+    header('location:login.php');
+  }
+?>
