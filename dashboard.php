@@ -94,64 +94,9 @@
         </div>
       </div>
 
-      <div class="sales-boxes">
-        <div class="recent-sales box">
-          <div class="title">Recent Sales</div>
-          <div class="sales-details">
-            <ul class="details">
-              <li class="topic">Date</li>
+      <!-- eliminated form here -->
 
-              <!-- Demo code for list adding... -->
-
-
-              <!-- <li><a href="#">02 Jan 2021</a></li>
-              <li><a href="#">02 Jan 2021</a></li> -->
-            </ul>
-            <ul class="details">
-              <li class="topic">Customer</li>
-
-              <!-- Demo code for list adding... -->
-
-              <!-- <li><a href="#">Rafiur</a></li>
-              <li><a href="#">Zubayer</a></li> -->
-            </ul>
-            <ul class="details">
-              <li class="topic">Sales</li>
-
-              <!-- Demo code for list adding... -->
-
-              <!-- <li><a href="#">Delivered</a></li>
-              <li><a href="#">Pending</a></li> -->
-            </ul>
-            <ul class="details">
-              <li class="topic">Total</li>
-
-              <!-- Demo code for list adding... -->
-
-              <!-- <li><a href="#">$204.98</a></li>
-              <li><a href="#">$24.55</a></li> -->
-            </ul>
-            </div>
-            <div class="button">
-              <a href="#">See All</a>
-            </div>
-        </div>
-        <div class="top-sales box">
-          <div class="title">Top Selling Product</div>
-          <ul class="top-sales-details">
-
-            <!-- Demo code for list adding... -->
-
-            <!-- <li>
-            <a href="#">
-              <span class="product">Vuitton Sunglasses</span>
-            </a>
-            <span class="price">$1107</span>
-          </li> -->
-
-          </ul>
-        </div>
-      </div>
+      
     </div>
   </section>
   <div class="footer">
