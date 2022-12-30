@@ -96,16 +96,16 @@
 
       <!-- eliminated form here -->
 
+      <div class="date-time-label">
+        <label>Current Date & Time</label>
+      </div>
+      <div class="time">
+        <span id="time"> </span></h1>
+        <script src="time.js">   </script>
+      </div>
+
     </div>
   </section>
-
-  <div class="date-time-label">
-    <lable>Current Date & Time</label>
-  </div>
-  <div class="time">
-    <span id="time"> </span></h1>
-    <script src="index.js">   </script>
-  </div>
 
   <div class="footer">
       <label>©</label>
