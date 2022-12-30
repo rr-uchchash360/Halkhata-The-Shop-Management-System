@@ -392,21 +392,21 @@ button:hover{
 .date-time-label{
   position: absolute;
   left: 38%;
-  top: 53%;
+  top: 180%;
   font-weight: 500;
   font-size: 35px;
   color: #0A2558;
-  justify-content: center;
+  /* justify-content: center; */
   width: 35%;
 }
 
 .time{
   position: absolute;
   left: 35%;
-  top: 60%;
+  top: 210%;
   font-weight: 500;
   font-size: 45px;
   color: #0A2558;
-  justify-content: center;
-  width: 35%;
+  /* justify-content: center; */
+  width: 40%;
 }

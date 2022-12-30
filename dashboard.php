@@ -21,11 +21,7 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="dashboard.css">
     <link rel="icon" href="icons/dashboard.png" type="image/icon type">
-
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-
-
-    
 </head>
 
 <body>
@@ -100,8 +96,8 @@
         <label>Current Date & Time</label>
       </div>
       <div class="time">
-        <span id="time"> </span></h1>
-        <script src="time.js">   </script>
+        <span id="time"> </span>
+        <script src="time.js"></script>
       </div>
 
     </div>
