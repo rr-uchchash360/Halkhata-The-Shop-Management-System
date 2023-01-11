@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Product</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="design/add.css">
     <link rel="icon" href="icons/add.png" type="image/icon type">
 </head>
 

@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Product</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="update.css">
+    <link rel="stylesheet" href="design/update.css">
     <link rel="icon" href="icons/update.png" type="image/icon type">
 </head>
 
