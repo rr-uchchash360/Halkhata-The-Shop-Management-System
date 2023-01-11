@@ -23,11 +23,11 @@ This is basically a very basic system to manage small shops.
 </div>
 
 
-## :gear: :wrench: TECHNOLOGIES AND PLATFORMS :
-* :gear:  Language        -  HTML, CSS, Bootstrap, JavaScript, PHP
-* :gear:  Database        - MySQL
-* :gear:  Version Control - Github
-* :gear:  IDE             - VS Code
+## Technologies
+* :abacus:  Language        -  HTML, CSS, Bootstrap, JavaScript, PHP
+* :secret:  Database        - MySQL
+* :passport_control:  Version Control - Github
+* :writing_hand:  IDE             - VS Code
 
 
 <!-- LICENSE -->
