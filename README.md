@@ -24,8 +24,8 @@ This is basically a very basic system to manage small shops.
 
 
 ## Technologies
-* :abacus:  Language        -  HTML, CSS, Bootstrap, JavaScript, PHP
-* :secret:  Database        - MySQL
+* :secret:  Language        -  HTML, CSS, Bootstrap, JavaScript, PHP
+* :abacus:  Database        - MySQL
 * :passport_control:  Version Control - Github
 * :writing_hand:  IDE             - VS Code
 
