@@ -35,9 +35,6 @@ This is basically a very basic system to manage small shops.
 
 Distributed under the MIT License.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
