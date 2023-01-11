@@ -33,7 +33,7 @@ This is basically a very basic system to manage small shops.
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License.
+Distributed under the [MIT License](https://github.com/rr-uchchash360/Halkhata-The-Shop-Management-System/blob/main/LICENSE).
 
 
 <!-- CONTRIBUTING -->
