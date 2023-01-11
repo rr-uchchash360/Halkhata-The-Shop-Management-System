@@ -23,20 +23,32 @@ This is basically a very basic system to manage small shops.
 </div>
 
 
-## :gear: :wrench: TECHNOLOGIES AND PLATFORMS :
-* :gear:  Language        -  HTML, CSS, PHP
-* :gear:  Database        - MySQL
-* :gear:  Version Control - Github
-* :gear:  IDE             - VS Code
+## Technologies
+* :secret:  Language        -  HTML, CSS, Bootstrap, JavaScript, PHP
+* :abacus:  Database        - MySQL
+* :passport_control:  Version Control - Github
+* :writing_hand:  IDE             - VS Code
 
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License.
+Distributed under the [MIT License](https://github.com/rr-uchchash360/Halkhata-The-Shop-Management-System/blob/main/LICENSE).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 
 <!-- CONTACT -->
